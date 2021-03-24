@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Азамат Молдашев](https://up.htmlacademy.ru/adaptive/22/user/165855).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/costigans).
 
 ---
 
