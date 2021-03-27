@@ -13,53 +13,105 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <header class="reviews__header">
-        <h2 class="reviews__header-title">Оставьте свой отзыв</h2>
-        <p class="reviews__text">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>
-      </header>
+          <h2 class="reviews__header-title">Оставьте свой отзыв</h2>
+          <p class="reviews__text">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </header>
       </div>
-      <form action="get">
-      <div class="intro__wrapper">
-        <legend>
-          <input type="text" name="" id="">
-          <input type="text" name="" id="">
-          <input type="text" name="" id="">
-        </legend>
-      </div>
-      <div class="contacts__wrapper">
-        <legend>
-          <input type="number" name="" id="">
-          <input type="email" name="" id="">
-        </legend>
-      </div>
-      <div class="ratings__wrapper">
-        <legend>
-          <input type="radio" name="" id="">
-          <input type="radio" name="" id="">
-          <input type="radio" name="" id="">
-        </legend>
-      </div>
-      <div class="attractions__wrapper">
-        <legend>
-          <input type="checkbox" name="" id="">
-          <input type="checkbox" name="" id="">
-          <input type="checkbox" name="" id="">
-          <input type="checkbox" name="" id="">
-        </legend>
-      </div>
-      <div class="opinions__wrapper">
-        <legend>
-          <textarea name="" id="" cols="30" rows="10">
-
-          </textarea>
-        </legend>
-      </div>
-    </form>
-    <button type="button">Отправить отзыв</button>
+      <form method="get" action="echo.htmlacademy.com">
+        <fieldset>
+          <ul class="fieldset__list">
+            <li class="fieldset__item--wrapper">
+              <p>Представьтесь:</p>
+              <legend>
+                <p>Имя*:
+                  <input type="text" placeholder="Петр">
+                </p>
+                <p>Фамилия*:
+                  <input type="text" placeholder="Иванов">
+                </p>
+                <p>Отчество:
+                  <input type="text" placeholder="Александрович">
+                </p>
+              </legend>
+            </li>
+            <li class="fieldset__item--wrapper">
+              <p>Контактная информация:</p>
+              <legend>
+                <ul>
+                  <li>
+                    <p>
+                      Контактный телефон*:
+                      <input type="number" placeholder="Введите телефон">
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Электронная почта*:
+                      <input type="email" placeholder="Введите e-mail">
+                    </p>
+                  </li>
+                </ul>
+              </legend>
+            </li>
+            <li class="fieldset__item--wrapper">
+              <p>
+                Ваше общее впечатление:
+              </p>
+              <legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="" id="" checked>
+                    <span>Скорее положительное</span>
+                  </li>
+                  <li>
+                    <input type="radio" name="" id="">
+                    <span>Скорее отрицательное</span>
+                  </li>
+                  <li>
+                    <input type="radio" name="" id="">
+                    <span>Затрудняюсь ответить</span>
+                  </li>
+                </ul>
+              </legend>
+            </li>
+            <li class="fieldset__item--wrapper">
+              <p>Посещенные достопримечательности:</p>
+              <legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" checked>
+                    <span>Мост Дьявола</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked>
+                    <span>Гора-Колокол</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked>
+                    <span>Слайд-парк</span>
+                  </li>
+                  <li>
+                    <input type="checkbox">
+                    <span>Красные скалы</span>
+                  </li>
+                </ul>
+              </legend>
+            </li>
+            <li class="fieldset__item--wrapper">
+              <p>Опишите свои эмоции:</p>
+              <legend>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              </legend>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <button type="button">Отправить отзыв</button>
     </section>
     <footer class="footer">
-      
+
     </footer>
   </main>
 </body>
