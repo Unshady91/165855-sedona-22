@@ -38,9 +38,8 @@
         </p>
       </div>
       <form class="main__form" method="post" action="echo.htmlacademy.com">
-        <fieldset class="form__fieldset">
-          <div class="fieldset__intro">
-            <h3 class="intro__title">Представьтесь:</h3>
+          <fieldset class="fieldset__intro">
+            <legend class="intro__title">Представьтесь:</legend>
             <label class="intro__intro-label">
               Имя*:
               <input class="intro-label__input-name" type="text" placeholder="Петр">
@@ -53,9 +52,9 @@
               Отчество:
               <input class="intro-label__input-name" type="text" placeholder="Александрович">
             </label>
-          </div>
-          <div class="fieldset-address">
-            <h3 class="fieldset-address__address-title">Контактная информация:</h3>
+          </fieldset>
+          <fieldset class="fieldset-address">
+            <legend class="fieldset-address__address-title">Контактная информация:</legend>
             <ul class="fieldset-address__address-list">
               <li class="address-list__address-item">
                 <label class="fieldset-address__address-label">
@@ -67,14 +66,14 @@
                 <label class="fieldset-address__address-label">
                   Электронная почта*:
                   <input class="address-label__input-email" type="email" placeholder="Введите e-mail">
-                </label>
+                </label>-
               </li>
             </ul>
-          </div>
-          <div class="fieldset__radio-buttons">
-            <h3 class="radio-buttons__title">
+          </fieldset>
+          <fieldset class="fieldset__radio-buttons">
+            <legend class="radio-buttons__title">
               Ваше общее впечатление:
-            </h3>
+            </legend>
             <ul class="radio-label__radio-list">
               <li class="radio-list__radio-item">
                 <label class="radio-buttons__radio-label">
@@ -95,9 +94,9 @@
                 </label>
               </li>
             </ul>
-          </div>
-          <div class="fieldset__checkbox">
-            <h3 class="checkbox__title">Посещенные достопримечательности:</h3>
+          </fieldset>
+          <fieldset class="fieldset__checkbox">
+            <legend class="checkbox__title">Посещенные достопримечательности:</legend>
             <ul class="checkbox-label__checkbox-list">
               <li class="checkbox-list__checkbox-item">
                 <label class="fieldset-checkbox__checkbox-label">
@@ -124,15 +123,14 @@
                 </label>
               </li>
             </ul>
-          </div>
-          <div class="fieldset-textarea">
-            <h3 class="fieldset-textarea__textarea-title">Опишите свои эмоции:</h3>
+          </fieldset>
+          <fieldset class="fieldset-textarea">
+            <legend class="fieldset-textarea__textarea-title">Опишите свои эмоции:</legend>
             <label class="fieldset-textarea_textarea-label">
               <textarea class="textarea-label__textarea" name="textarea" cols="30" rows="10"
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-          </div>
-        </fieldset>
+          </fieldset>
       </form>
       <button class="form__button" type="button">Отправить отзыв</button>
     </section>
