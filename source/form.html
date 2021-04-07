@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
@@ -12,7 +12,7 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="page-header__main-nav-wrapper">
+      <div class="page-header__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -32,7 +32,7 @@
     <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
     </a>
-    <img class="page-header__background-image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
+    <img class="page-header__image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
   </header>
   <main class="page-main">
     <section class="content">
@@ -44,11 +44,11 @@
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </header>
-        <form class="content__form" method="post" action="echo.htmlacademy.com">
-          <fieldset class="content__fieldset">
-            <div class="content__intro">
-              <h3 class="intro__title">Представьтесь:</h3>
-              <label class="intro__label">
+        <form class="content__form form" method="post" action="echo.htmlacademy.com">
+          <fieldset class="form__fieldset">
+            <div class="form__intro">
+              <h3 class="form__title">Представьтесь:</h3>
+              <label class="form__label">
                 Имя<sup>*</sup>:
                 <input class="intro__input-text" type="text" placeholder="Петр">
               </label>
@@ -61,7 +61,7 @@
                 <input class="intro__input-text" type="text" placeholder="Александрович">
               </label>
             </div>
-            <div class="content__contact-info">
+            <div class="form__contact-info">
               <h3 class="contact-info__title">Контактная информация:</h3>
               <ul class="contact-info__list">
                 <li class="contact-info__item">
@@ -78,7 +78,7 @@
                 </li>
               </ul>
             </div>
-            <div class="content__radio-buttons">
+            <div class="form__radio-buttons">
               <h3 class="radio-buttons__title">
                 Ваше общее впечатление:
               </h3>
@@ -103,7 +103,7 @@
                 </li>
               </ul>
             </div>
-            <div class="content__check">
+            <div class="form__check">
               <h3 class="check__title">Посещенные достопримечательности:</h3>
               <ul class="check__list">
                 <li class="check__item">
@@ -132,7 +132,7 @@
                 </li>
               </ul>
             </div>
-            <div class="content__textarea">
+            <div class="form__textarea">
               <h3 class="textarea__title">Опишите свои эмоции:</h3>
               <label class="textarea_label">
                 <textarea class="textarea__input-textarea" name="textarea" cols="30" rows="10"
@@ -141,18 +141,18 @@
             </div>
           </fieldset>
         </form>
-        <button class="form__button" type="button">Отправить отзыв</button>
+        <button class="content__button" type="button">Отправить отзыв</button>
         <p class="content__legend">
           <small>* - Обязательные поля</small>
         </p>
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__footer-wrapper">
+      <div class="footer__wrapper">
         <a class="foooter__link" href="#">#Visitsedona</a>
         <div class="footer__socials">
           <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="footer__list">
+          <ul class="footer__list socials">
             <li class="socials__item">
               <a class="socials__link" href="#">
                 <img class="socials__image" src="img/icons/socials_twitter.svg" width="18" height="15"
