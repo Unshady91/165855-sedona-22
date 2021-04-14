@@ -4,14 +4,37 @@
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+  color: @basic-black;
 }
 
+// Мобильная версия
 .page__body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  background-color: #d6d6d6;
-  color: #000000;
+}
+
+.container {
+  width: 292px;
+  padding: 0 20px;
+  outline: 5px solid rgba(255, 225, 0, 0.7);
+  outline-offset: -5px;
+}
+
+// Планшетная версия
+@media (min-width: 768px) {
+  .container {
+    width: 748px;
+    padding: 0 10px;
+  }
+}
+
+// Десктопная версия
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }
