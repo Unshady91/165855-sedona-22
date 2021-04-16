@@ -9,43 +9,46 @@
 </head>
 
 <body class="page__body">
+  <h1 class="body__main-title visually-hidden">Преимущества Седоны</h1>
   <header class="body__page-header body__page-header--wrapper">
     <nav class="page-header__main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="main-nav__icon main-nav__icon--visually-hidden">Открыть меню</span>
+      <button class="toggle main-nav__toggle" type="button">
+        <span class="main-nav__icon visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list">
+      <ul class="list main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Главная</a>
+          <a class="link main-nav__link main-nav__link--current">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          <a class="link main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          <a class="link main-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="link main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
     </nav>
     <a class="page-header__link" href="#">
       <img class="page-header__logo-image" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
     </a>
-    <img class="page-header__image page-header__image--wrapper" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
+    <div class="page-header__image-wrapper">
+      <img class="image page-header__image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
+    </div>
   </header>
   <main class="body__main">
     <section class="main__content main__content--wrapper">
-      <header class="content__main-header">
-        <h1 class="main-header__title">
+      <header class="header content__main-header">
+        <p class="tagline main-header__tagline">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h1>
-        <p class="main-header__text">
+        </p>
+        <p class="text main-header__text">
           Рассмотрим 5 причин, по которым <span class="main-header__span">Седона</span> круче, чем Гранд Каньон!
         </p>
       </header>
       <div class="content__features content__features--wrapper">
-        <h2 class="features__title features__title--visually-hidden">Список преимуществ</h2>
+        <h2 class="features__title visually-hidden">Список преимуществ Седоны</h2>
         <ol class="features__list">
           <li class="features__item">
             <h3 class="features__title">Настоящий городок</h3>
@@ -119,7 +122,7 @@
     </section>
     <section class="main__location">
       <header class="location__header location__header--wrapper">
-        <h2 class="location__title location__title--visually-hidden">Гостиницы на карте</h2>
+        <h2 class="location__title visually-hidden">Гостиницы на карте</h2>
         <p class="location__lead-paragraph">Заинтересовались?</p>
         <p class="location__text">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
@@ -128,7 +131,7 @@
       </header>
     </section>
     <section class="main__map">
-      <h2 class="map__title map__title--visually-hidden">Расположение Седоны на карте</h2>
+      <h2 class="map__title visually-hidden">Расположение Седоны на карте</h2>
       <div class="map__wrapper">
         <img class="map__image" src="img/map.png" width="320" height="350" alt="Карта. Расположение Седоны на карте">
       </div>
@@ -138,7 +141,7 @@
     <div class="footer__wrapper">
       <a class="footer__link" href="#">#Visitsedona</a>
       <div class="footer__socials">
-        <h2 class="footer__title footer__title--visually-hidden">Соцсети</h2>
+        <h2 class="footer__title visually-hidden">Соцсети</h2>
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link" href="#">
