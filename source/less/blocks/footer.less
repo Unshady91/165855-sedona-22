@@ -1,3 +1,34 @@
+// Обертка подвала
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .container();
 }
+// Хэштег
+.footer__wrapper .link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: @basic-black;
+
+  .link-decoration();
+}
+//
+.footer__link {
+  display: flex;
+  margin-top: 20px;
+}
+// Соцсети
+.footer__socials .list {
+  display: flex;
+  justify-content: space-between;
+  width: 46px;
+  height: 48px;
+  .clear-list();
+
+  .link {
+    background-color: @basic-blue-smooth;
+  }
+}
+// Копирайт

@@ -1,17 +1,20 @@
-// Подсписок. Геометрия
-.features__sub-list {
-  display: flex;
-  flex-direction: column;
-
-  .clear-list();
-}
 // Подсписок. Заголовок. Стили
 .sub-list__wrapper {
   width: 70%;
   margin-left: 25%;
+  padding: 25px 0;
   outline-offset: 5px solid @basic-pink;
   outline: -5px;
 }
+// Подсписок. Геометрия
+.features__sub-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  .clear-list();
+}
+// Подсписок. Пункты. Стили
 .features__sub-list .item {
   background-color: @basic-white;
   color: @basic-black;
@@ -21,26 +24,23 @@
     font-size: 18px;
     line-height: 26px;
   }
+
   .text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
   }
 }
-
-// Подсписок. Заголовок. Геометрия
-.sub-list__lead-paragraph {
+// Подсписок. Пункты. Геометрия
+.sub-item_align_left {
   text-align: left;
   margin: 0;
   padding: 0;
-  position: relative;
 }
-// Подсписок. Текст. Геометрия
+
+.sub-list__lead-paragraph,
 .sub-list__text {
-  text-align: left;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  .sub-item_align_left;
 }
-
-
 
