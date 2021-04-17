@@ -5,7 +5,7 @@
   align-items: center;
   .container();
 }
-// Хэштег
+// Элемент "Хэштег" стили
 .footer__wrapper .link {
   font-weight: bold;
   font-size: 21px;
@@ -14,21 +14,47 @@
 
   .link-decoration();
 }
-//
+// Геометрия
 .footer__link {
   display: flex;
   margin-top: 20px;
 }
-// Соцсети
+// "Соцсети". Стили
 .footer__socials .list {
-  display: flex;
-  justify-content: space-between;
-  width: 46px;
-  height: 48px;
+
   .clear-list();
 
   .link {
     background-color: @basic-blue-smooth;
   }
 }
+// "Соцсети" Геометрия
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  width: 126px;
+  margin-top: 20px;
+}
+
+// Иконки. Стили
+.socials__item .link {
+  display: flex;
+  width: 46px;
+  height: 48px;
+}
+
+// Иконки. Геометрия
+
 // Копирайт
+.main__footer .copyright {
+
+}
+.footer__copyright {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: 5px solid @basic-blue-smooth;
+  outline-offset: -5px;
+
+}
