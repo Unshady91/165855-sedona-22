@@ -1,7 +1,7 @@
-
 // Логотип шапки. Стили
 .page-header__logo-image {
-
+  position: relative;
+  z-index: 2;
 }
 // Логотип шапки. Геометрия
 .page-header__link {
@@ -11,9 +11,19 @@
 
 // Картина шапки. Стили
 .page-header__image-wrapper {
-
+position: relative;
+margin-top: -25px;
+z-index: 0;
 }
 // Картина шапки. Геометрия
-.image .page-header__image {
-
+.page-header__image {
+  background-color: @basic-blue-smooth;
 }
+// Картина шапки. Геометрия
+.page-header__image-wrapper .image {
+  display: block;
+  width: 300px;
+  height: 389px;
+}
+
+

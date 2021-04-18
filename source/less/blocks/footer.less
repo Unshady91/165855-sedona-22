@@ -1,10 +1,17 @@
 // Обертка подвала
+.main__footer {
+
+  .container();
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  .container();
+  margin: 0 auto;
 }
+
 // Элемент "Хэштег" стили
 .footer__wrapper .link {
   font-weight: bold;
@@ -14,47 +21,63 @@
 
   .link-decoration();
 }
-// Геометрия
+// Элемент "Хэштег". Геометрия
 .footer__link {
   display: flex;
   margin-top: 20px;
+}
+
+// Обертка списка соцсетей. Геометрия
+.footer__socials {
+  margin-top: 33px;
 }
 // "Соцсети". Стили
 .footer__socials .list {
 
   .clear-list();
-
-  .link {
-    background-color: @basic-blue-smooth;
-  }
 }
-// "Соцсети" Геометрия
+// "Соцсети". Список. Геометрия
 .socials__list {
   display: flex;
   justify-content: space-between;
-  width: 126px;
-  margin-top: 20px;
 }
-
-// Иконки. Стили
+// Иконки. Элемент списка. Геометрия
 .socials__item .link {
   display: flex;
+  justify-content: center;
+  margin-right: 6px;
   width: 46px;
   height: 48px;
-}
-
-// Иконки. Геометрия
-
-// Копирайт
-.main__footer .copyright {
 
 }
+// Иконки. Элемент списка. Стили
+.socials__link {
+  background-color: @basic-blue-smooth;
+}
+
+// Копирайт. Геометрия
 .footer__copyright {
   display: flex;
-  align-items: baseline;
   margin-top: 10px;
   margin-bottom: 20px;
-  outline: 5px solid @basic-blue-smooth;
-  outline-offset: -5px;
+}
 
+// "Разработано". Стили
+.footer__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+// Логотип htmlacademy. Стили
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+.copyright__logo path {
+  fill: @basic-black;
+}
+.copyright__link .logo {
+  margin-top: 13px;
 }

@@ -1,16 +1,17 @@
-// Список преимуществ. Стили
+// Список преимуществ. Геометрия
 .content__features .list {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+// Список преимуществ. Стили
+.features__list {
 
   .clear-list();
 }
-// Список преимуществ. Геометрия
-
 // Пункты списка. Стили
-.features__list .item {
+.features__item {
 
   .marine-style();
 
@@ -25,51 +26,44 @@
     line-height: 21px;
   }
 }
+// Пункты списка. Геометрия
 
-// Миксин для нижнего ряда преимуществ
+// Миксин для нижнего ряда в списке преимуществ
   .rows {
   background-color: @basic-milk;
   color: @basic-black;
-  }
-
+}
   .row_lines {
   background-color: @basic-grey;
-  }
-
+}
   .row_lines_pos {
-    width: 280px;
+  width: 280px;
   height: 1px;
   display: block;
   content: '';
   margin-left: 5px;
-  }
+}
 // Нижний ряд списка с серым фоном. стили
-.features__list li:nth-child(3) {
-  .rows;
-  &:after {
-    .row_lines;
-  }
-  &:after {
-    .row_lines_pos;
-  }
-}
-
-.features__list li:nth-child(4) {
-  .rows;
-  &:after {
-    .row_lines;
-  }
-  &:after {
-    .row_lines_pos;
+.features__list {
+  .features__item--row {
+    .rows;
+    &:after {
+      .row_lines;
+    }
+    &:after {
+      .row_lines_pos;
+    }
   }
 }
-
-.features__list li:nth-child(5) {
-  .rows;
-  &:after {
-    .row_lines;
-  }
-  &:after {
-    .row_lines_pos;
-  }
+// Задний фон для картинки.
+// Преимущество №1
+// Задний фон для картинки. Геометрия
+.features__item .image {
+  display: block;
+  width: 300px;
+  height: 260px;
+}
+// Задний фон для картинки. Стили
+.features__image {
+  background-color: @basic-green-navy;
 }
