@@ -30,15 +30,12 @@
   .clear-list();
 }
 
-.features__item--row {
+.features__list .features__item--row {
   .rows;
 
   &::after {
-    .row_lines;
-  }
-
-  &::after {
-    .row_lines_pos;
+    .row_lines();
+    .row_lines_pos();
   }
 }
 // Пункты списка. Стили
