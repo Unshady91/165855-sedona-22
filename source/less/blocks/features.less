@@ -11,9 +11,11 @@
   background-color: @basic-milk;
   color: @basic-black;
 }
+
 .row_lines {
   background-color: @basic-grey;
 }
+
 .row_lines_pos {
   display: block;
   width: 280px;
@@ -26,26 +28,30 @@
 .features__list {
 
   .clear-list();
+}
 
-  .features__item--row {
-    .rows;
-    &:after {
-      .row_lines;
-    }
-    &:after {
-      .row_lines_pos;
-    }
+.features__item--row {
+  .rows;
+
+  &::after {
+    .row_lines;
+  }
+
+  &::after {
+    .row_lines_pos;
   }
 }
 // Пункты списка. Стили
 .features__item {
 
   .marine-style();
+
   .features__title {
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
   }
+
   .features__text {
     font-weight: normal;
     font-size: 14px;
