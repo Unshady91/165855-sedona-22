@@ -5,38 +5,52 @@
   align-items: center;
   text-align: center;
 }
-// Пункты списка. Геометрия
-// Миксин для нижнего ряда в списке преимуществ
+// Нижний ряд списка. Стили
 .rows {
   background-color: @basic-milk;
   color: @basic-black;
 }
-
+// Разделитель. Стили
 .row_lines {
   background-color: @basic-grey;
 }
-
+// Разделитель. Геометрия
 .row_lines_pos {
   display: block;
   width: 280px;
   height: 1px;
   content: "";
-  margin-left: 5px;
+  margin: 0 0 0 5px;
 }
-// Список преимуществ. Стили
-// Нижний ряд списка с серым фоном. стили
+// Убирает булеты у списка
 .features__list {
-
+  counter-reset: li 0;
   .clear-list();
 }
+// Маркеры нумерации. Стили
+.features__list > li {
+  position: relative;
 
-.features__list .features__item--row {
+  &::before {
+    counter-increment: li;
+    content: "- " "№" counter(li) " -";
+    position: absolute;
+    top: 55px;
+    left: 130px;
+  }
+}
+// Нижний ряд списка с серым фоном. Cтили
+.features__list .features__item--row:not(:last-child) {
   .rows;
 
   &::after {
     .row_lines();
     .row_lines_pos();
   }
+}
+
+.features__item--row:last-child {
+  .rows;
 }
 // Пункты списка. Стили
 .features__item {
@@ -57,7 +71,7 @@
 }
 // Пункты списка. Текст. Геометрия
 .features__item > .text {
-  padding: 0 10px;
+  padding: 30px 10px 0 10px;
 }
 // Задний фон для картинки.
 // Преимущество №1

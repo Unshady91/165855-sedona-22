@@ -1,7 +1,11 @@
 // Обертка для секции location
-.location__header--wrapper {
+.main__location--wrapper {
 
   .container();
+}
+// Обертка кнопки
+.location__link--wrapper {
+  padding: 0 20px 0 20px;
 }
 // Хэдэр. Стили и геометрия
 .location__header {
@@ -23,11 +27,11 @@
   }
 
   .text {
-    padding: 0 15px;
+    padding: 0 15px 0 15px;
   }
 }
 // Ссылка. Стили
-.location__header .link {
+.location__link {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -36,9 +40,9 @@
   .marine-style();
 }
 // Ссылка. Геометрия
-.location__link {
+.location__link--wrapper .link {
   display: block;
   text-align: center;
   padding: 15px 32px;
-  margin-bottom: 25px;
+  margin: 0 0 55px 0;
 }
