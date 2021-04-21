@@ -1,8 +1,9 @@
+// Задает максимальную ширину картинок, с произвольной высотой
 img {
   max-width: 100%;
   height: auto;
 }
-
+// Прячет блоки
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -15,7 +16,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+// Обертка
 .container {
   width: 292px;
   padding: 0 5px;
@@ -23,16 +24,16 @@ img {
   outline: 5px solid rgba(255, 225, 0, 0.7);
   outline-offset: -5px;
 }
-
+// Удаляет стили ссылочных тегов
 .link-decoration {
   text-decoration: none;
 }
-
+// Миксин с в стиле голубой фон + белый текст
 .marine-style {
   color: @basic-white;
   background-color: @basic-blue-smooth;
 }
-
+// Обнуляет булеты в списках
 .clear-list {
   margin: 0;
   padding: 0;
