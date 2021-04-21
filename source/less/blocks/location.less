@@ -3,26 +3,30 @@
 
   .container();
 }
-// Хэдэр. Стили
+// Хэдэр. Стили и геометрия
 .location__header {
-  .lead-paragraph {
+  .location__lead-paragraph {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
   }
 
-  .text {
+  .location__text {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
   }
+
+  .lead-paragraph,
+  .text {
+    text-align: center;
+  }
+
+  .text {
+    padding: 0 15px;
+  }
 }
-// Текст. Геометрия
-.location__lead-paragraph,
-.location__text {
-  text-align: center;
-}
-// Ссылка на гостиницы. Стили
+// Ссылка. Стили
 .location__header .link {
   font-weight: bold;
   font-size: 21px;
@@ -31,7 +35,7 @@
   .link-decoration();
   .marine-style();
 }
-
+// Ссылка. Геометрия
 .location__link {
   display: block;
   text-align: center;
