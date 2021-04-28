@@ -1,14 +1,17 @@
-// Главное меню. Стили
-.page-header__main-nav .list {
-  background-color: @basic-blue-smooth;
-
-  .clear-list();
-}
 // Главное меню. Геометрия
-.main-nav .list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: auto;
-  height: fit-content;
+.main-nav {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+  }
+
+  .main-nav__list {
+    background-color: @basic-blue-smooth;
+
+    .clear-list();
+  }
 }
+// Главное меню. Стили
