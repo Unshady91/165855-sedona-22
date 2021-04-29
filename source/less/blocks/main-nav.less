@@ -3,24 +3,40 @@
   .list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: auto;
-    height: fit-content;
   }
 
   .main-nav__list {
+    position: relative;
     background-color: @basic-blue-smooth;
 
     .clear-list();
-
+    // Крестик закрывает список
     &::before {
-      content: "\274c";
+      display: block;
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
-      width: 32px;
-      height: 32px;
-      color: @basic-white;
+      width: 25px;
+      height: 4px;
+      background-color: @basic-white;
+      transform: rotate(-45deg);
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 4px;
+      background-color: @basic-white;
+      transform: rotate(45deg);
+      margin-top: 20px;
+      margin-right: 10px;
     }
   }
 }

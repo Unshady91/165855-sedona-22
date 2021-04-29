@@ -8,12 +8,33 @@
 // Картина шапки. Геометрия
 .page-header__image--wrapper {
   position: relative;
-  margin-top: -25px;
+  margin-top: -35px;
+
+  &::before {
+    content: url("../img/icons/intro.svg");
+    position: absolute;
+    width: 300px;
+    height: max-content;
+    z-index: 3;
+    margin-top: 65px;
+    margin-left: 5px;
+  }
 
   .page-header__image {
-    background-image: url("img/icons/intro.svg");
-    background-repeat: no-repeat;
     background-color: @basic-blue-smooth;
+    position: relative;
+  }
+
+  .image::before {
+    content: "";
+    background-image: url("../img/icons/header_triangle.svg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    position: absolute;
   }
 
   .image {
