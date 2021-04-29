@@ -2,18 +2,51 @@
 .content__main-header {
   text-align: center;
   padding: 12px 17px 5px 17px;
+  position: relative;
+
+  // Заголовок В хэдере. Стили
+  .main-header__tagline {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  // Текст в хэдере. Стили
+  .main-header__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .text {
+    text-align: center;
+  }
 }
-// Заголовок В хэдере. Стили
-.main-header__tagline {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-// Текст в хэдере. Стили
-.main-header__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
+
+.main-header--wrapper {
+  margin-bottom: 30px;
+
+  .content__main-header--triangle {
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    width: 146px;
+    height: 37px;
+    background-image: url("../img/icons/intro_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+
+  .content__main-header--triangle-rotated {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    width: 146px;
+    height: 37px;
+    background-image: url("../img/icons/intro_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 100;
+    transform: rotateY(180deg);
+  }
 }

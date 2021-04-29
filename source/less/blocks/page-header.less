@@ -22,19 +22,6 @@
 
   .page-header__image {
     background-color: @basic-blue-smooth;
-    position: relative;
-  }
-
-  .image::before {
-    content: "";
-    background-image: url("../img/icons/header_triangle.svg");
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 57px;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    position: absolute;
   }
 
   .image {
@@ -42,5 +29,28 @@
     width: 300px;
     height: 389px;
     z-index: 0;
+  }
+
+  .page-header__image--triangle {
+    left: 132px;
+    bottom: -2px;
+    position: absolute;
+    background-image: url("../img/icons/header_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+    width: 600px;
+    height: 57px;
+  }
+
+  .page-header__image--triangle-rotated {
+    right: 132px;
+    bottom: -2px;
+    position: absolute;
+    background-image: url("../img/icons/header_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+    width: 600px;
+    height: 57px;
+    transform: rotateY(180deg);
   }
 }
