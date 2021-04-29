@@ -1,0 +1,48 @@
+// Описывает позиционирование псевдоэлемента (иконки) под-списка
+.sub-list-pseudo-icon {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 39px;
+  height: 36px;
+  top: 23px;
+  left: -45px;
+  z-index: 100;
+}
+
+.sub-list__item:first-of-type {
+  .sub-list__wrapper {
+    position: relative;
+
+    &::before {
+      background-image: url("../img/icons/features_home.svg");
+
+      .sub-list-pseudo-icon();
+    }
+  }
+}
+
+.sub-list__item:nth-child(2) {
+  .sub-list__wrapper {
+    position: relative;
+
+    &::before {
+      background-image: url("../img/icons/features_present.svg");
+
+      .sub-list-pseudo-icon();
+    }
+  }
+}
+
+.sub-list__item:last-child {
+  .sub-list__wrapper {
+    position: relative;
+
+    &::before {
+      background-image: url("../img/icons/features_burger.svg");
+
+      .sub-list-pseudo-icon();
+    }
+  }
+}
