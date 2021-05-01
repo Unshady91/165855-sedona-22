@@ -1,0 +1,15 @@
+// Картина шапки. Геометрия
+.page-header__image--wrapper {
+  position: relative;
+  margin-top: -35px;
+
+  &::before {
+    content: url("../img/icons/intro.svg");
+    position: absolute;
+    width: 300px;
+    height: max-content;
+    z-index: 3;
+    margin-top: 65px;
+    margin-left: 5px;
+  }
+}
