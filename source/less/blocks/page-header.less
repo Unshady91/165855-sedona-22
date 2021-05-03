@@ -1,3 +1,30 @@
+// Обертка шапки страницы
+.body__page-header--wrapper {
+
+  .container();
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+  }
+}
+// Картина шапки. Геометрия
+.page-header__image--wrapper {
+  position: relative;
+  margin-top: -35px;
+
+  &::before {
+    content: url("../img/icons/intro.svg");
+    position: absolute;
+    width: 300px;
+    height: max-content;
+    z-index: 3;
+    margin-top: 65px;
+    margin-left: 5px;
+  }
+}
 // Фоновая картинка в под главным меню
 .page-header__image {
   background-color: @basic-blue-smooth;
@@ -31,4 +58,14 @@
   width: 600px;
   height: 57px;
   transform: rotateY(180deg);
+}
+// Логотип шапки. Геометрия
+.page-header__link {
+  display: flex;
+  justify-content: center;
+  margin-top: -42px;
+
+  img {
+    z-index: 2;
+  }
 }
