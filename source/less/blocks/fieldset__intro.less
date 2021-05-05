@@ -1,0 +1,53 @@
+// Блок "ПРЕДСТАВЬТЕСЬ"
+// Заголовок блока
+.fieldset__title {
+  font-weight: bold;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+}
+// Лейблы
+.fieldset__label {
+  font-size: @baseFontSize - 4;
+  line-height: @baseLineHeight;
+}
+// Инпуты
+.fieldset__input {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  background-color: @basic-milk-light;
+  color: @basic-black;
+  border: 0;
+}
+// Заголовок. геометрия
+.fieldset__intro .title {
+  text-align: center;
+}
+
+.fieldset__input--wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+// Текст. геометрия
+.fieldset__intro label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+// Отступ перед инпутом. геометрия
+.fieldset__intro span {
+  padding-right: 10px;
+  padding-top: 13x;
+  padding-bottom: 10px;
+}
+
+.fieldset__intro .input {
+  flex-grow: 1;
+}
+
+.fieldset__input::placeholder {
+  padding-left: 22px;
+  color: @basic-black;
+}

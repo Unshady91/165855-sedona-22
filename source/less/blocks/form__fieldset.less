@@ -1,14 +1,17 @@
 //Элемент fieldset блока form
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+// Линии между блоками
+.fieldset__intro--rows {
+  border-top: 1px solid @basic-milk-fog;
+}
+
 .fieldset__intro--rows,
 .fieldset__contact-info--rows,
 .fieldset__radio-buttons--rows,
 .fieldset__check--rows,
 .fieldset__textarea--rows {
-  display: flex;
-  flex-direction: column;
   border-bottom: 1px solid @basic-milk-fog;
-}
-
-.fieldset__intro--rows {
-    border-top: 1px solid @basic-milk-fog;
 }
