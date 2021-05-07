@@ -1,4 +1,33 @@
 .fieldset__list {
+  display: flex;
+  flex-direction: column;
 
   .clear-list();
+}
+
+.fieldset__radio-buttons {
+
+  .fieldset__item {
+    margin-bottom: 15px;
+  }
+}
+
+.fieldset__input--checkbox,
+.fieldset__input--radio {
+
+  .visually-hidden();
+}
+
+.fieldset__input--radio {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: @basic-orange;
+    top: 0;
+    left: 0;
+  }
 }
