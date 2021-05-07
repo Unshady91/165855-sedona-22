@@ -1,52 +1,11 @@
-// Блок "ПРЕДСТАВЬТЕСЬ"
-// Заголовок блока
-.fieldset__title {
-  font-weight: bold;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-}
-// Лейблы
-.fieldset__label {
-  font-size: @baseFontSize - 4;
-  line-height: @baseLineHeight;
-}
-// Инпуты
-.fieldset__input {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  background-color: @basic-milk-light;
-  color: @basic-black;
-  border: 0;
-}
-// Заголовок. геометрия
-.fieldset .title {
-  text-align: center;
+// Блок "CONTACT-INFO"
+// Ширина инпута
+.fieldset__input--size {
+  width: 100%;
+  padding: 16px 0 16px 22px;
 }
 
-.fieldset__block--wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-// Текст. геометрия
-.fieldset__intro label {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-// Отступ перед инпутом. геометрия
-.fieldset__intro span {
-  padding: 13px 10px 13px 0;
-  align-self: center;
-}
-
-.fieldset__intro .input {
-  flex-grow: 1;
-}
-
-.fieldset__input::placeholder {
-  padding-left: 22px;
-  color: @basic-black;
+.fieldset__input--number {
+  appearance: none;
+  appearance: textfield;
 }
