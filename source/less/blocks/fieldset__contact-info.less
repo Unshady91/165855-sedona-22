@@ -1,11 +1,28 @@
-// Блок "CONTACT-INFO"
-// Ширина инпута
 .fieldset__input--size {
-  width: 100%;
-  padding: 16px 0 16px 22px;
+  width: 80%;
+  padding: 16px 0 16px 12px;
 }
 
 .fieldset__input--number {
   appearance: none;
   appearance: textfield;
+}
+
+.fieldset__input--wrapper {
+  display: flex;
+}
+
+.fieldset__empty-block {
+  width: 20%;
+  background-color: @basic-milk-sand;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--icon-phone {
+    background-image: url("/img/icons/input_phone.svg");
+  }
+
+  &--icon-mail {
+    background-image: url("/img/icons/input_mail.svg");
+  }
 }
