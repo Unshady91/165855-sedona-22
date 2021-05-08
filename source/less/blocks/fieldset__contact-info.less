@@ -4,8 +4,10 @@
 }
 
 .fieldset__input--number {
-  appearance: none;
-  appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 }
 
 .fieldset__input--wrapper {
