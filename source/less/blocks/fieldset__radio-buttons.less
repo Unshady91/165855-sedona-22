@@ -1,33 +1,46 @@
-.fieldset__list {
+
+
+.fieldset__radio-buttons--label-wrapper {
   display: flex;
   flex-direction: column;
 
   .clear-list();
-}
 
-.fieldset__radio-buttons {
+  .label {
+    position: relative;
+    margin-left: 55px;
+    margin-bottom: 45px;
+  }
 
-  .fieldset__item {
-    margin-bottom: 15px;
+  .fieldset__input {
+
+    .visually-hidden();
   }
 }
 
-.fieldset__input--checkbox,
-.fieldset__input--radio {
-
-  .visually-hidden();
-}
-
-.fieldset__input--radio {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 58px;
-    height: 58px;
-    background-color: @basic-orange;
-    top: 0;
-    left: 0;
-  }
-}
+// .fieldset__box {
+//   &--radio {
+//     &::before {
+//       position: absolute;
+//       display: block;
+//       content: "";
+//       background-color: @basic-milk-sand;
+//       z-index: 100;
+//       top: -10px;
+//       left: -55px;
+//     }
+//       &::before {
+//       width: 48px;
+//       height: 48px;
+//       border-radius: 50%;
+//     }
+//   }
+//
+//   &--radio-on {
+//     background-color: @basic-black;
+//
+//     &::before {
+//       border: 5px solid @basic-milk-sand;
+//     }
+//   }
+// }
