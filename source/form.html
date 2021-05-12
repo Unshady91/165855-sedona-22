@@ -100,27 +100,34 @@
               </div>
             </div>
           </div>
-          <div class="fieldset__radio-buttons fieldset__radio-buttons--wrapper fieldset__radio-buttons--rows">
-            <h3 class="title fieldset__title fieldset__title--size">
+          <div
+            class="radio-buttons fieldset__radio-buttons fieldset__radio-buttons--wrapper fieldset__radio-buttons--rows">
+            <h3 class="title radio-buttons__title radio-buttons__title--size">
               Ваше общее впечатление:
             </h3>
-            <div class="fieldset__radio-buttons--label-wrapper">
-              <label class="label fieldset__label fieldset__label--text-size">
-                <input class="input fieldset__input fieldset__input--radio" type="radio" name="radio" checked>
-                <span class="box fieldset__box fieldset__box--radio fieldset__box--radio-on"></span>
-                Скорее положительное
-              </label>
-              <label class="label fieldset__label fieldset__label--text-size">
-                <input class="input fieldset__input fieldset__input--radio" type="radio" name="radio">
-                <span class="box fieldset__box fieldset__box--radio fieldset__box--radio-on"></span>
-                Скорее отрицательное
-              </label>
-              <label class="label fieldset__label fieldset__label--text-size">
-                <input class="input fieldset__input fieldset__input--radio" type="radio" name="radio">
-                <span class="box fieldset__box fieldset__box--radio fieldset__box--radio-on"></span>
-                Затрудняюсь ответить
-              </label>
-            </div>
+            <ul class="list radio-buttons__list">
+              <li class="item radio-buttons__item">
+                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button1">Скорее положительное
+                </label>
+                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio" id="radio-button1" checked>
+                <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
+              </li>
+              <li class="item radio-buttons__item">
+                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button2">
+                  Скорее отрицательное
+                </label>
+                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio" id="radio-button2">
+                <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
+              </li>
+              <li class="item radio-buttons__item">
+                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button3">
+                  Затрудняюсь ответить
+                </label>
+                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio" id="radio-button3">
+                <span class="span radio-buttons__span radio-buttons__span--radio-on">
+                </span>
+              </li>
+            </ul>
           </div>
           <div class="fieldset__check fieldset__check--wrapper fieldset__check--rows">
             <h3 class="title fieldset__title fieldset__title--size">

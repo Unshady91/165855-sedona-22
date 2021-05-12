@@ -1,46 +1,47 @@
-
-
-.fieldset__radio-buttons--label-wrapper {
+.radio-buttons__list {
   display: flex;
   flex-direction: column;
 
   .clear-list();
 
-  .label {
+  .item {
+    display: flex;
     position: relative;
-    margin-left: 55px;
-    margin-bottom: 45px;
+    margin-left: 25px;
+    margin-bottom: 10px;
   }
 
-  .fieldset__input {
+  .radio-buttons__input {
 
     .visually-hidden();
   }
+
+  .label {
+    padding-top: 10px;
+    order: 3;
+  }
+
+  .span {
+    margin-right: 10px;
+  }
+}
+/* Не зачекан */
+.radio-buttons__input {
+
+  & + .radio-buttons__span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: @basic-milk-sand;
+    box-sizing: border-box;
+  }
+}
+/* Зачекан */
+.radio-buttons__input:checked {
+
+  & + .radio-buttons__span--radio-on {
+    background-color: @basic-black-light;
+    border: 12px solid @basic-milk-sand;
+  }
 }
 
-// .fieldset__box {
-//   &--radio {
-//     &::before {
-//       position: absolute;
-//       display: block;
-//       content: "";
-//       background-color: @basic-milk-sand;
-//       z-index: 100;
-//       top: -10px;
-//       left: -55px;
-//     }
-//       &::before {
-//       width: 48px;
-//       height: 48px;
-//       border-radius: 50%;
-//     }
-//   }
-//
-//   &--radio-on {
-//     background-color: @basic-black;
-//
-//     &::before {
-//       border: 5px solid @basic-milk-sand;
-//     }
-//   }
-// }
