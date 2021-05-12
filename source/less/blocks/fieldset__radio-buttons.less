@@ -11,11 +11,6 @@
     margin-bottom: 10px;
   }
 
-  .radio-buttons__input {
-
-    .visually-hidden();
-  }
-
   .label {
     padding-top: 10px;
     order: 3;
@@ -28,6 +23,8 @@
 /* Не зачекан */
 .radio-buttons__input {
 
+  .visually-hidden();
+
   & + .radio-buttons__span {
     width: 48px;
     height: 48px;
@@ -38,10 +35,8 @@
 }
 /* Зачекан */
 .radio-buttons__input:checked {
-
   & + .radio-buttons__span--radio-on {
     background-color: @basic-black-light;
     border: 12px solid @basic-milk-sand;
   }
 }
-
