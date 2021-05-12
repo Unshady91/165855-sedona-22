@@ -1,24 +1,27 @@
 // Обертка списка соцсетей. Геометрия
-.footer__socials {
+.content__socials {
   margin-top: 25px;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 // Список "Соцсети". Стили
 .socials__list {
 
   .clear-list();
 }
-// Список "Соцсети". Геометрия
-.footer__socials .list {
-  display: flex;
-  justify-content: space-between;
-}
 // Иконки. Элемент списка. Геометрия
-.socials__item .link {
-  display: flex;
-  justify-content: center;
-  width: 46px;
-  height: 48px;
-  margin: 0 6px 0 0;
+.socials__item {
+
+  .link {
+    display: flex;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    margin: 0 6px 0 0;
+  }
 }
 // Иконки. Элемент списка. Стили
 .socials__link {
