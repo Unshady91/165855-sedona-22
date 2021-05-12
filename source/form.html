@@ -79,22 +79,25 @@
               </label>
             </div>
           </div>
-          <div class="fieldset__contact-info fieldset__contact-info--wrapper fieldset__contact-info--rows">
-            <h3 class="title fieldset__title fieldset__title--size">
+          <div class="contact-info fieldset__contact-info fieldset__contact-info--wrapper fieldset__contact-info--rows">
+            <h3 class="title contact-info__title contact-info__title--size">
               Контактная информация:
             </h3>
-            <div class="fieldset__block fieldset__block--wrapper">
-              <label class="label fieldset__label fieldset__input--wrapper fieldset__label--text-size">
-                <span>Контактный телефон<sup>*</sup>:</span>
-                <input class="input fieldset__input fieldset__input--size fieldset__input--number" type="number"
-                  placeholder="Введите телефон">
-                <span class="fieldset__empty-block"></span>
-              </label>
-              <label class="label fieldset__label fieldset__input--wrapper fieldset__label--text-size">
-                <span>Электронная почта<sup>*</sup>:</span>
-                <input class="input fieldset__input fieldset__input--size" type="email" placeholder="Введите e-mail">
-                <span class="fieldset__empty-block fieldset__empty-block--icon-mail"></span>
-              </label>
+            <div class="contact-info__block contack-info__block--wrapper">
+              <label class="label contact-info__label contact-info__label--text-size" for="input-tel">Контактный
+                телефон<sup>*</sup>:</label>
+              <div class="contact-info__input-span--wrapper">
+                <input class="input contact-info__input contact-info__input--size contact-info__input--number"
+                  type="tel" placeholder="Введите телефон" id="input-tel">
+                <span class="contact-info__icon-block contact-info__icon-block--icon-phone"></span>
+              </div>
+              <label class="label contact-info__label contact-info__label--text-size" for="input-mail">Электронная
+                почта<sup>*</sup>:</label>
+              <div class="contact-info__input-span--wrapper">
+                <input class="input contact-info__input contact-info__input--size" type="email"
+                  placeholder="Введите e-mail" id="input-mail">
+                <span class="contact-info__icon-block contact-info__icon-block--icon-mail"></span>
+              </div>
             </div>
           </div>
           <div class="fieldset__radio-buttons fieldset__radio-buttons--wrapper fieldset__radio-buttons--rows">

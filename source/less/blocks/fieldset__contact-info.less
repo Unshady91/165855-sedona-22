@@ -1,24 +1,27 @@
-.fieldset__input--size {
+.contact-info__input {
+
+  .fieldset__input();
+}
+
+.contact-info__block .label {
+  padding-bottom: 20px;
+}
+
+.contact-info__input--size {
   width: 80%;
   padding: 16px 0 16px 12px;
 }
 
-.fieldset__input--number {
-  &::-webkit-inner-spin-button {
-    appearance: none;
-  }
-}
-
-.fieldset__input--wrapper {
+.contact-info__input-span--wrapper {
   display: flex;
 }
 
-.fieldset__empty-block {
+.contact-info__icon-block {
   width: 20%;
   background-color: @basic-milk-sand;
   background-repeat: no-repeat;
   background-position: center;
-
+  z-index: 100;
   &--icon-phone {
     background-image: url("/img/icons/input_phone.svg");
   }
