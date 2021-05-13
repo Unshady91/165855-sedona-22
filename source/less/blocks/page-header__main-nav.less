@@ -1,5 +1,6 @@
 // Главное меню. Геометрия
 .main-nav {
+
   .list {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
       background-color: @basic-white;
       transform: rotate(-45deg);
       margin-top: 20px;
-      margin-right: 10px;
+      margin-right: 20px;
     }
 
     &::after {
@@ -36,7 +37,7 @@
       background-color: @basic-white;
       transform: rotate(45deg);
       margin-top: 20px;
-      margin-right: 10px;
+      margin-right: 20px;
     }
   }
 }
@@ -58,25 +59,25 @@
 
     .link-decoration();
 
-    &:hover {
-      background-color: darken(@basic-blue-smooth, 15);
-    }
+    // &:hover {
+    //   background-color: darken(@basic-blue-smooth, 15);
+    // }
   }
   // Главное меню. Активная ссылка. Стили
-  .main-nav__link--current {
-    color: @basic-black-light;
-  }
+  // .main-nav__link--current {
+  //   color: @basic-black-light;
+  // }
 }
 // Обертка кнопка пользовательского меню.
 .main-nav__toggle--wrapper {
   display: flex;
   justify-content: flex-end;
   order: 2;
-}
-// Кнопка главного меню
-.toggle {
-  margin: 10px;
-  padding: 5px;
+
+  .toggle {
+    margin: 10px;
+    padding: 5px;
+  }
 }
 
 .button-size-menu {
@@ -91,9 +92,9 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.6;
-  }
+  // &:hover {
+  //   opacity: 0.6;
+  // }
 }
 // Главное меню. Ссылка. Геометрия
 .main-nav__link {
@@ -106,11 +107,7 @@
 
   .link-decoration();
 
-  &:hover {
-    background-color: darken(@basic-blue-smooth, 15);
-  }
-}
-// Главное меню. Активная ссылка. Стили
-.main-nav__link--current {
-  color: @basic-black-light;
+  // &:hover {
+  //   background-color: darken(@basic-blue-smooth, 15);
+  // }
 }

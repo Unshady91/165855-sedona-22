@@ -1,10 +1,30 @@
+.fieldset__textarea {
+  margin-bottom: 20px;
+
+  .input {
+    padding: 10px 0 0 15px;
+  }
+}
+
 .textarea__input {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: 150px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  background-color: @basic-milk-light;
   resize: none;
+  box-sizing: border-box;
+  border: 0;
 
   &::placeholder {
-    padding: 20px 0 20px 20px;
+    padding: 2px 0 0 2px;
+    font-family: inherit;
+    color: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
   }
 }

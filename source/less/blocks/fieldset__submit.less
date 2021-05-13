@@ -1,4 +1,27 @@
 .fieldset__submit {
   display: flex;
-  
+  margin-top: 30px;
+
+  .input {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.submit__input {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: @baseFontSize + 3;
+  line-height: @baseLineHeight;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+
+  .marine-style();
+}
+
+.submit__text {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
 }

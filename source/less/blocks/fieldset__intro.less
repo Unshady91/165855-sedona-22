@@ -25,9 +25,10 @@
   text-align: center;
 }
 
-.fieldset__block--wrapper {
+.fieldset__content-block--wrapper {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   margin-bottom: 10px;
 }
 // Текст. геометрия
@@ -42,9 +43,13 @@
   align-self: center;
 }
 
-// .fieldset__intro .input {
-//   flex-grow: 1;
-// }
+.fieldset__input--size {
+  width: 192px;
+}
+
+.fieldset__input--size-long {
+  flex-grow: 1;
+}
 
 .fieldset__input::placeholder {
   padding-left: 22px;

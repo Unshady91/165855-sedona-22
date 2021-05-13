@@ -39,11 +39,9 @@
     <a class="link page-header__link" href="#">
       <img class="page-header__logo" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
     </a>
-    <div class="page-header__image--wrapper">
-      <img class="image page-header__image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
-      <span class="page-header__image--triangle"></span>
-      <span class="page-header__image--triangle-rotated"></span>
-    </div>
+    <img class="image page-header__image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
+    <span class="page-header__image--triangle"></span>
+    <span class="page-header__image--triangle-rotated"></span>
   </header>
   <main class="body__main">
     <section class="main__content">
@@ -60,169 +58,185 @@
       </header>
       <form class="form content__form" method="post" action="echo.htmlacademy.com">
         <fieldset class="fieldset form__fieldset form__fieldset--wrapper">
-          <div class="fieldset__intro fieldset__intro--wrapper fieldset__intro--rows">
-            <h3 class="title fieldset__title fieldset__title--size">
-              Представьтесь:
-            </h3>
-            <div class="fieldset__block fieldset__block--wrapper">
-              <label class="label fieldset__label fieldset__label--text-size">
-                <span>Имя<sup>*</sup>:</span>
-                <input class="input fieldset__input" type="text" placeholder="Петр">
-              </label>
-              <label class="label fieldset__label fieldset__label--text-size">
-                <span>Фамилия<sup>*</sup>:</span>
-                <input class="input fieldset__input" type="text" placeholder="Иванов">
-              </label>
-              <label class="label fieldset__label fieldset__label--text-size">
-                <span>Отчество:</span>
-                <input class="input fieldset__input" type="text" placeholder="Александрович">
-              </label>
-            </div>
-          </div>
-          <div class="contact-info fieldset__contact-info fieldset__contact-info--wrapper fieldset__contact-info--rows">
-            <h3 class="title contact-info__title contact-info__title--size">
-              Контактная информация:
-            </h3>
-            <div class="contact-info__block contack-info__block--wrapper">
-              <label class="label contact-info__label contact-info__label--text-size" for="input-tel">Контактный
-                телефон<sup>*</sup>:</label>
-              <div class="contact-info__input-span--wrapper">
-                <input class="input contact-info__input contact-info__input--size contact-info__input--number"
-                  type="tel" placeholder="Введите телефон" id="input-tel">
-                <span class="contact-info__icon-block contact-info__icon-block--icon-phone"></span>
-              </div>
-              <label class="label contact-info__label contact-info__label--text-size" for="input-mail">Электронная
-                почта<sup>*</sup>:</label>
-              <div class="contact-info__input-span--wrapper">
-                <input class="input contact-info__input contact-info__input--size" type="email"
-                  placeholder="Введите e-mail" id="input-mail">
-                <span class="contact-info__icon-block contact-info__icon-block--icon-mail"></span>
+          <div class="fieldset__intro--rows">
+            <div class="fieldset__intro fieldset__intro--wrapper">
+              <h3 class="title fieldset__title fieldset__title--size">
+                Представьтесь:
+              </h3>
+              <div class="fieldset__content-block fieldset__content-block--wrapper">
+                <label class="label fieldset__label fieldset__label--text-size">
+                  <span>Имя<sup>*</sup>:</span>
+                  <input class="input fieldset__input fieldset__input--size fieldset__input--size-long" type="text"
+                    placeholder="Петр">
+                </label>
+                <label class="label fieldset__label fieldset__label--text-size">
+                  <span>Фамилия<sup>*</sup>:</span>
+                  <input class="input fieldset__input fieldset__input--size" type="text" placeholder="Иванов">
+                </label>
+                <label class="label fieldset__label fieldset__label--text-size">
+                  <span>Отчество:</span>
+                  <input class="input fieldset__input fieldset__input--size" type="text" placeholder="Александрович">
+                </label>
               </div>
             </div>
           </div>
-          <div
-            class="radio-buttons fieldset__radio-buttons fieldset__radio-buttons--wrapper fieldset__radio-buttons--rows">
-            <h3 class="title radio-buttons__title radio-buttons__title--size">
-              Ваше общее впечатление:
-            </h3>
-            <ul class="list radio-buttons__list">
-              <li class="item radio-buttons__item">
-                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button1">Скорее
-                  положительное
-                </label>
-                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
-                  id="radio-button1" checked>
-                <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
-              </li>
-              <li class="item radio-buttons__item">
-                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button2">
-                  Скорее отрицательное
-                </label>
-                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
-                  id="radio-button2">
-                <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
-              </li>
-              <li class="item radio-buttons__item">
-                <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button3">
-                  Затрудняюсь ответить
-                </label>
-                <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
-                  id="radio-button3">
-                <span class="span radio-buttons__span radio-buttons__span--radio-on">
-                </span>
-              </li>
-            </ul>
+          <div class="fieldset__contact-info--rows">
+            <div class="contact-info fieldset__contact-info fieldset__contact-info--wrapper">
+              <h3 class="title contact-info__title contact-info__title--size">
+                Контактная информация:
+              </h3>
+              <div class="contact-info__block contack-info__block--wrapper">
+                <label class="label contact-info__label contact-info__label--text-size" for="input-tel">Контактный
+                  телефон<sup>*</sup>:</label>
+                <div class="contact-info__input-span--wrapper">
+                  <input class="input contact-info__input contact-info__input--size contact-info__input--number"
+                    type="tel" placeholder="Введите телефон" id="input-tel">
+                  <span class="contact-info__icon-block contact-info__icon-block--icon-phone"></span>
+                </div>
+                <label class="label contact-info__label contact-info__label--text-size" for="input-mail">Электронная
+                  почта<sup>*</sup>:</label>
+                <div class="contact-info__input-span--wrapper">
+                  <input class="input contact-info__input contact-info__input--size" type="email"
+                    placeholder="Введите e-mail" id="input-mail">
+                  <span class="contact-info__icon-block contact-info__icon-block--icon-mail"></span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="fieldset__checkbox-list fieldset__checkbox-list--wrapper fieldset__checkbox-list--rows">
-            <h3 class="title checkbox-list__title checkbox-list__title--size">
-              Посещенные достопримечательности:
-            </h3>
-            <ul class="checkbox-list__list">
-              <li class="item checkbox-list__item">
-                <label class="label checkbox-list__label checkbox-list__label--text-size">
-                  Мост Дьявола
-                </label>
-                <input class="input checkbox-list__input checkbox-list__input--checkbox" type="checkbox" checked>
-                <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
-              </li>
-              <li class="item checkbox-list__item">
-                <label class="label checkbox-list__label checkbox-list__label--text-size">
-                  Гора-Колокол
-                </label>
-                <input class="input checkbox-list__input checkbox-list__input--checkbox" type="checkbox" checked>
-                <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
-              </li>
-              <li class="item checkbox-list__item">
-                <label class="label checkbox-list__label checkbox-list__label--text-size">
-                  Слайд-парк
-                </label>
-                <input class="input checkbox-list__input checkbox-list__input--checkbox" type="checkbox" checked>
-                <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
-              </li>
-              <li class="item checkbox-list__item">
-                <label class="label checkbox-list__label checkbox-list__label--text-size">
-                  Красные скалы
-                </label>
-                <input class="input checkbox-list__input checkbox-list__input--checkbox" type="checkbox">
-                <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
-              </li>
-            </ul>
+          <div class="fieldset__radio-buttons--rows">
+            <div class="radio-buttons fieldset__radio-buttons fieldset__radio-buttons--wrapper">
+              <h3 class="title radio-buttons__title radio-buttons__title--size">
+                Ваше общее впечатление:
+              </h3>
+              <ul class="list radio-buttons__list">
+                <li class="item radio-buttons__item">
+                  <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button1">Скорее
+                    положительное
+                  </label>
+                  <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
+                    id="radio-button1" checked>
+                  <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
+                </li>
+                <li class="item radio-buttons__item">
+                  <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button2">
+                    Скорее отрицательное
+                  </label>
+                  <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
+                    id="radio-button2">
+                  <span class="span radio-buttons__span radio-buttons__span--radio-on"></span>
+                </li>
+                <li class="item radio-buttons__item">
+                  <label class="label radio-buttons__label radio-buttons__label--text-size" for="radio-button3">
+                    Затрудняюсь ответить
+                  </label>
+                  <input class="input radio-buttons__input radio-buttons__input--radio" type="radio" name="radio"
+                    id="radio-button3">
+                  <span class="span radio-buttons__span radio-buttons__span--radio-on">
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="textarea fieldset__textarea fieldset__textarea--rows">
-            <h3 class="title textarea__title textarea__title--size">
-              Опишите свои эмоции:
-            </h3>
-            <label class="label textarea__label textarea__label--text-size" for="textarea"></label>
-            <textarea class="input textarea__input textarea__input--text" id="textarea" name="textarea"
-              placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="fieldset__checkbox-list--rows">
+            <div class="fieldset__checkbox-list fieldset__checkbox-list--wrapper">
+              <div class="fieldset__checkbox-list ">
+                <h3 class="title checkbox-list__title checkbox-list__title--size">
+                  Посещенные достопримечательности:
+                </h3>
+                <ul class="checkbox-list__list">
+                  <li class="item checkbox-list__item">
+                    <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox1">
+                      Мост Дьявола
+                    </label>
+                    <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox1"
+                      type="checkbox" checked>
+                    <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                  </li>
+                  <li class="item checkbox-list__item">
+                    <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox2">
+                      Гора-Колокол
+                    </label>
+                    <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox2"
+                      type="checkbox" checked>
+                    <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                  </li>
+                  <li class="item checkbox-list__item">
+                    <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox3">
+                      Слайд-парк
+                    </label>
+                    <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox3"
+                      type="checkbox" checked>
+                    <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                  </li>
+                  <li class="item checkbox-list__item">
+                    <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox4">
+                      Красные скалы
+                    </label>
+                    <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox4"
+                      type="checkbox">
+                    <span class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="submit fieldset__submit feldset__submit--wrapper">
-            <input class="input submit__input" type="submit" value="Отправить отзыв">
-            <p class="text submit__text">
-              <small>* - Обязательные поля</small>
-            </p>
+          <div class="fieldset__textarea--wrapper">
+            <div class="textarea fieldset__textarea">
+              <h3 class="title textarea__title textarea__title--size">
+                Опишите свои эмоции:
+              </h3>
+              <label class="label textarea__label" for="textarea1"></label>
+              <textarea class="input textarea__input textarea__input--text" id="textarea1" name="textarea"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+            <div class="submit fieldset__submit fieldset__submit--size">
+              <input class="input submit__input submit__input--size" type="submit" value="Отправить отзыв">
+              <p class="text submit__text submit__text--size">
+                <small>* - Обязательные поля</small>
+              </p>
+            </div>
           </div>
         </fieldset>
       </form>
     </section>
-    <footer class="body__footer">
-      <h2 class="visually-hidden">Соцсети</h2>
-      <div class="content footer__content footer__content--wrapper">
-        <a class="link content__link" href="#">#Visitsedona</a>
-        <div class="content__socials">
-          <ul class="list socials__list">
-            <li class="item socials__item">
-              <a class="link socials__link" href="#">
-                <img class="icon socials__icon" src="img/icons/socials_twitter.svg" width="18" height="15"
-                  alt="Логотип твиттер">
-              </a>
-            </li>
-            <li class="item socials__item">
-              <a class="link socials__link" href="#">
-                <img class="icon socials__icon" src="img/icons/socials_fb.svg" width="9" height="19"
-                  alt="Логотип фейсбук">
-              </a>
-            </li>
-            <li class="item socials__item">
-              <a class="link socials__link" href="#">
-                <img class="icon socials__icon" src="img/icons/socials_utube.svg" width="20" height="14"
-                  alt="Логотип ютюб">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright footer__copyright">
-          <p class="text copyright__text">Разработано</p>
-          <a class="link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="logo copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path fill="#2E368F"
-                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
   </main>
+  <footer class="body__footer">
+    <h2 class="visually-hidden">Соцсети</h2>
+    <div class="content footer__content footer__content--wrapper">
+      <a class="link content__link" href="#">#Visitsedona</a>
+      <div class="content__socials">
+        <ul class="list socials__list">
+          <li class="item socials__item">
+            <a class="link socials__link" href="#">
+              <img class="icon socials__icon" src="img/icons/socials_twitter.svg" width="18" height="15"
+                alt="Логотип твиттер">
+            </a>
+          </li>
+          <li class="item socials__item">
+            <a class="link socials__link" href="#">
+              <img class="icon socials__icon" src="img/icons/socials_fb.svg" width="9" height="19"
+                alt="Логотип фейсбук">
+            </a>
+          </li>
+          <li class="item socials__item">
+            <a class="link socials__link" href="#">
+              <img class="icon socials__icon" src="img/icons/socials_utube.svg" width="20" height="14"
+                alt="Логотип ютюб">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright footer__copyright">
+        <p class="text copyright__text">Разработано</p>
+        <a class="link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="logo copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#2E368F"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
