@@ -1,6 +1,4 @@
 .body__page-header {
-
-
   .main-nav {
     display: flex;
     flex-direction: column;
@@ -8,7 +6,7 @@
     z-index: 0;
   }
 }
-// Картина шапки. Геометрия
+
 .page-header__image--wrapper {
   position: relative;
   box-sizing: border-box;
@@ -19,51 +17,42 @@
     position: absolute;
     content: url("../img/icons/intro.svg");
     height: max-content;
-    z-index: 100;
-    margin-top: 65px;
-    margin-left: 5px;
-    width: 100%;
+    left: 20px;
+    margin-top: 80px;
   }
 }
-// Фоновая картинка в под главным меню
+
 .page-header__image {
   background-color: @basic-blue-smooth;
-}
-
-.image {
   display: block;
-  width: 300px;
   height: 389px;
-  z-index: 0;
 }
 
 .page-header__image--triangle {
-  left: 132px;
-  bottom: -2px;
+  left: 160px;
+  bottom: 0;
   position: absolute;
   background-image: url("../img/icons/header_triangle.svg");
   background-repeat: no-repeat;
-  z-index: 5;
   width: 600px;
   height: 57px;
 }
-// Декоративное обрамление фоновой картинки
+
 .page-header__image--triangle-rotated {
-  right: 132px;
-  bottom: -2px;
   position: absolute;
+  right: 160px;
+  bottom: 0;
   background-image: url("../img/icons/header_triangle.svg");
   background-repeat: no-repeat;
-  z-index: 5;
   width: 600px;
   height: 57px;
   transform: rotateY(180deg);
 }
-// Логотип шапки. Геометрия
+
 .page-header__link {
   display: flex;
   justify-content: center;
-  margin-top: -42px;
+  margin-top: -56px;
 
   img {
     z-index: 3;

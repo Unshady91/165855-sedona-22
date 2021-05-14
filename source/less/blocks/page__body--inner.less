@@ -1,16 +1,45 @@
 .page__body--inner {
   .page-header__image--wrapper {
-    position: relative;
     margin-top: -35px;
 
     &::before {
-      content: url("../img/icons/intro.svg");
       position: absolute;
-      width: 300px;
-      height: max-content;
+      content: url("../img/icons/intro_inner.svg");
+      width: 230px;
+      height: 130px;
       z-index: 3;
-      margin-top: 65px;
-      margin-left: 5px;
+      margin-top: 55px;
+      margin-left: 25px;
     }
+  }
+
+  .page-header__image {
+    position: relative;
+    object-fit: cover;
+    object-position: bottom;
+    width: 320px;
+    display: block;
+    height: 130px;
+  }
+
+  .page-header__image--triangle {
+    position: absolute;
+    left: 160px;
+    background-image: url("../img/icons/header_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+    width: 600px;
+    height: 57px;
+  }
+
+  .page-header__image--triangle-rotated {
+    position: absolute;
+    right: 160px;
+    background-image: url("../img/icons/header_triangle.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+    width: 600px;
+    height: 57px;
+    transform: rotateY(180deg);
   }
 }
