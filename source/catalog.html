@@ -8,12 +8,16 @@
 </head>
 
 <body class="page__body page__body--inner">
-  <h1 class="visually-hidden">Преимущества Седоны</h1>
+  <h1 class="visually-hidden">Фотогалерея</h1>
   <header class="body__page-header body__page-header--wrapper">
-    <nav class="page-header__main-nav">
-      <button class="toggle main-nav__toggle" type="button">
-        <span class="main-nav__icon visually-hidden">Открыть меню</span>
-      </button>
+    <nav class="main-nav page-header__main-nav">
+      <div class="main-nav__toggle--wrapper">
+        <button class="toggle main-nav__toggle button-size-menu" type="button">
+          <span class="main-nav__icon visually-hidden">
+            Открыть
+          </span>
+        </button>
+      </div>
       <ul class="list main-nav__list">
         <li class="main-nav__item">
           <a class="link main-nav__link" href="index.html">Главная</a>
@@ -29,11 +33,13 @@
         </li>
       </ul>
     </nav>
-    <a class="page-header__link" href="#">
-      <img class="page-header__logo-image" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
+    <a class="link page-header__link" href="#">
+      <img class="page-header__logo" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
     </a>
-    <div class="page-header__image-wrapper">
+    <div class="page-header__image--wrapper">
       <img class="image page-header__image" src="img/header_bg.jpg" width="901" height="389" alt="Вид на каньон">
+      <span class="page-header__image--triangle"></span>
+      <span class="page-header__image--triangle-rotated"></span>
     </div>
   </header>
   <main class="body__main">
@@ -181,11 +187,11 @@
       </div>
     </section>
   </main>
-  <footer class="main__footer">
+  <footer class="body__footer">
     <h2 class="visually-hidden">Соцсети</h2>
-    <div class="footer__wrapper">
-      <a class="link footer__link" href="#">#Visitsedona</a>
-      <div class="footer__socials">
+    <div class="content footer__content footer__content--wrapper">
+      <a class="link content__link" href="#">#Visitsedona</a>
+      <div class="content__socials">
         <ul class="list socials__list">
           <li class="item socials__item">
             <a class="link socials__link" href="#">
