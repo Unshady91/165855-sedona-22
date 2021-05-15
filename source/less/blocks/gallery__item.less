@@ -1,0 +1,41 @@
+.gallery__item {
+  position: relative;
+
+  &:first-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -25px;
+    right: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: @basic-milk-fog;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -25px;
+    right: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: @basic-milk-fog;
+  }
+
+  &:last-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0px;
+    right: -25px;
+    width: 320px;
+    height: 1px;
+    background-color: @basic-milk-fog;
+  }
+}
+
+
+.gallery__link {
+  display: flex;
+}
