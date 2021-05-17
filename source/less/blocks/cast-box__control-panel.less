@@ -1,5 +1,7 @@
 .cast-box__control-panel {
   display: flex;
+  justify-content: start;
+  align-items: center;
   width: 280px;
   height: 66px;
   background-color: @basic-milk-light;
@@ -10,11 +12,39 @@
   .clear-list();
 }
 
-.conrol-panel__list:first-child {
-  flex-grow: 1;
+.control-panel__list li {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.control-panel__item--size {
+  display: flex;
+  width: 50px;
+  height: 20px;
+}
+
+.control-panel__button--size {
+  display: flex;
+  min-width: 20px;
+  height: 20px;
+}
+
+.control-panel__item--size-long {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  width: 70%;
+
+  .button {
+    margin-left: 25px;
+  }
 }
 
 .control-panel__button {
-  display: flex;
-  width: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+.control-panel__button path {
+  fill: @basic-black;
 }
