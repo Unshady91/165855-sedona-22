@@ -2,14 +2,23 @@
   .page-header__image--wrapper {
     margin-top: -35px;
 
+    @media (min-width: @tablet-width) {
+      margin-top: -28px;
+    }
+
     &::before {
       position: absolute;
       content: url("../img/icons/intro_inner.svg");
-      width: 230px;
-      height: 130px;
+      top: 55px;
+      left: 45px;
       z-index: 3;
-      margin-top: 55px;
-      margin-left: 25px;
+      transform: scale(1);
+
+      @media (min-width: @tablet-width) {
+        top: 30px;
+        left: 260px;
+        transform: scale(1.5);
+      }
     }
   }
 
@@ -17,29 +26,12 @@
     position: relative;
     object-fit: cover;
     object-position: bottom;
-    width: 320px;
+    min-width: 320px;
     display: block;
     height: 130px;
-  }
 
-  .page-header__image--triangle {
-    position: absolute;
-    left: 160px;
-    background-image: url("../img/icons/header_triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 5;
-    width: 600px;
-    height: 57px;
-  }
-
-  .page-header__image--triangle-rotated {
-    position: absolute;
-    right: 160px;
-    background-image: url("../img/icons/header_triangle.svg");
-    background-repeat: no-repeat;
-    z-index: 5;
-    width: 600px;
-    height: 57px;
-    transform: rotateY(180deg);
+    @media (min-width: @tablet-width) {
+      height: 290px;
+    }
   }
 }
