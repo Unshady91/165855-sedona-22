@@ -18,6 +18,11 @@
   counter-reset: li 0;
 
   .clear-list();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: minmax(768px, max-content);
+  }
 }
 
 .features__list > li {
@@ -83,3 +88,10 @@
   height: 260px;
   background-color: @basic-green-navy;
 }
+
+// @media (min-width: @tablet-width) {
+//   .features__list:first-child {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }

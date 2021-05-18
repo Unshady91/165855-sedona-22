@@ -4,6 +4,12 @@
   }
 }
 
+.main__content {
+  box-sizing: border-box;
+  .main-header {
+    margin-top: 23px;
+  }
+}
 .content__main-header {
   text-align: center;
   padding: 12px 17px 5px 17px;
@@ -12,11 +18,15 @@
   &::before {
     position: absolute;
     content: url("../img/icons/intro_arrow.svg");
-    bottom: -85px;
-    left: -350px;
+    bottom: -66px;
+    left: -229px;
     width: 768px;
     height: 37px;
     z-index: 100;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   .text {
@@ -36,4 +46,16 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .content__main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tagline {
+      width: 520px;
+    }
+  }
 }
