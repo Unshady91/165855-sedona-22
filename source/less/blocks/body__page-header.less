@@ -9,9 +9,7 @@
 
 .page-header__image--wrapper {
   position: relative;
-  box-sizing: border-box;
   margin-top: -35px;
-  width: 100%;
 
   &::before {
     position: absolute;
@@ -52,8 +50,8 @@
   height: 389px;
   object-fit: cover;
 
-    @media (min-width: @tablet-width) {
-    height: 518px;
+  @media (min-width: @tablet-width) {
+      height: 518px;
   }
 }
 
@@ -71,17 +69,6 @@
     bottom: 10px;
   }
 }
-
-// .page-header__image--triangle-rotated {
-//   position: absolute;
-//   right: 160px;
-//   bottom: 0;
-//   background-image: url("../img/icons/header_triangle.svg");
-//   background-repeat: no-repeat;
-//   width: 600px;
-//   height: 57px;
-//   transform: rotateY(180deg);
-// }
 
 .page-header__link {
   display: flex;
