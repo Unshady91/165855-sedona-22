@@ -1,7 +1,6 @@
 .page-header__image--wrapper,
 .main-nav__toggle--wrapper,
 .content__main-header--wrapper,
-.content__features--wrapper,
 .content__form--wrapper,
 .main__location--wrapper,
 .form__fieldset--wrapper,
@@ -20,6 +19,15 @@
     box-sizing: border-box;
     width: 768px;
     padding: 0 60px;
+    margin: 0 auto;
+  }
+}
+
+.content__features--wrapper {
+  .container();
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
     margin: 0 auto;
   }
 }
@@ -47,6 +55,7 @@
   .container();
 
   @media (min-width: @tablet-width) {
+    width: 768px;
     padding: 0;
   }
 }
@@ -65,8 +74,9 @@
   .container();
 
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
     min-width: 768px;
     padding: 0;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 }
