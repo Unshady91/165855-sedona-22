@@ -10,6 +10,11 @@
 
 .map__image {
   display: block;
-  width: 320px;
+  background-color: @basic-blue-ocean;
+  min-width: 320px;
   height: 350px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
 }

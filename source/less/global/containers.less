@@ -1,10 +1,10 @@
+.page-header__image--wrapper,
 .main-nav__toggle--wrapper,
 .content__main-header--wrapper,
 .content__features--wrapper,
 .content__form--wrapper,
 .main__location--wrapper,
 .form__fieldset--wrapper,
-.location__header--wrapper,
 .fieldset__intro--wrapper,
 .fieldset__contact-info--wrapper,
 .fieldset__radio-buttons--wrapper,
@@ -12,11 +12,12 @@
 .content__gallery--wrapper,
 .video-content__header--wrapper,
 .video-content__cast-box--wrapper,
+.location__header--wrapper,
 .footer__content--wrapper {
-
   .container();
 
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
     width: 768px;
     padding: 0 60px;
     margin: 0 auto;
@@ -44,6 +45,10 @@
 
 .features__item--wrapper {
   .container();
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .video-content__cast-box--wrapper-background {
@@ -53,5 +58,15 @@
   @media (min-width: @tablet-width) {
     width: 648px;
     padding: 0 60px;
+  }
+}
+
+.map__wrapper {
+  .container();
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    padding: 0;
+    margin: 0 auto;
   }
 }

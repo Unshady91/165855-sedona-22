@@ -61,7 +61,7 @@
               </p>
             </div>
             <img class="image features__image" src="img/features_No_1.jpg" width="520" height="260"
-                alt="Зеленый таунхаус в Седоне">
+              alt="Зеленый таунхаус в Седоне">
             <ul class="sub-list features__sub-list">
               <li class="item sub-list__item">
                 <div class="sub-list__wrapper">
@@ -147,8 +147,11 @@
     <section class="main__map">
       <h2 class="visually-hidden">Расположение Седоны на карте</h2>
       <div class="map__wrapper">
-        <img class="background map__image" src="img/map.png" width="320" height="350"
-          alt="Карта. Расположение Седоны на карте">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map_desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map_tablet.png">
+          <img class="map__image" src="img/map_mobile.png" alt="Карта. Расположение Седоны на карте">
+        </picture>
       </div>
     </section>
   </main>
