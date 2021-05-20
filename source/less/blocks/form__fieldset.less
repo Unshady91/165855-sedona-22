@@ -1,6 +1,17 @@
-.form__fieldset--wrapper {
-  .container();
+.content__form fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
 
+.content__form {
+  padding: 0;
+  margin: 0;
+}
+
+.form__fieldset--wrapper {
+  padding: 0;
+  margin: 0;;
   // @media (min-width: @tablet-width) {
   //   box-sizing: border-box;
   //   width: 768px;
@@ -15,6 +26,7 @@
 }
 
 .fieldset__intro--rows {
+  box-sizing: border-box;
   border-top: 1px solid @basic-milk-fog;
 }
 

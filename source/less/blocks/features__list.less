@@ -65,9 +65,9 @@
     .row_lines();
     .row_lines_pos();
 
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+    // @media (min-width: @tablet-width) {
+    //   display: none;
+    // }
   }
 }
 
@@ -89,9 +89,9 @@
 .features__item > .text {
   padding: 22px 10px;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
+  // @media (min-width: @tablet-width) {
+  //   display: flex;
+  // }
 }
 
 .features__image {
@@ -101,26 +101,26 @@
   background-color: @basic-green-navy;
 }
 
-@media (min-width: @tablet-width) {
+// @media (min-width: @tablet-width) {
 
-  .features__item--wrapper-content {
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 1;
-    padding: 5px;
-  }
+//   .features__item--wrapper-content {
+//     display: flex;
+//     flex-direction: row;
+//     flex-shrink: 1;
+//     padding: 5px;
+//   }
 
-  .features__item--switch {
-    .features__item--wrapper {
-      order: 2;
-    }
-  }
+//   .features__item--switch {
+//     .features__item--wrapper {
+//       order: 2;
+//     }
+//   }
 
-  .features__item--row {
-    display: flex;
-    flex-direction: column;
-  }
-}
+//   .features__item--row {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
 // Гридовая разметка
 .content__features {
@@ -133,73 +133,73 @@
 
     .clear-list();
 
-    @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 256px);
-    grid-template-rows: repeat(4, 256px);
-    grid-template-areas: "f1 pic pic"
-                          "sub sub sub"
-                          "slide slide f2"
-                          "f3 f4 f5";
-    }
+    // @media (min-width: @tablet-width) {
+    // display: grid;
+    // grid-template-columns: repeat(3, 256px);
+    // grid-template-rows: repeat(4, 256px);
+    // grid-template-areas: "f1 pic pic"
+    //                       "sub sub sub"
+    //                       "slide slide f2"
+    //                       "f3 f4 f5";
+    // }
   }
 }
 
-@media (min-width: @tablet-width) {
-  .features__list {
+// @media (min-width: @tablet-width) {
+//   .features__list {
 
-    & > li:first-child {
-      display: flex;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
+//     & > li:first-child {
+//       display: flex;
+//       grid-column-start: 1;
+//       grid-column-end: 4;
+//       grid-row-start: 1;
+//       grid-row-end: 2;
+//     }
 
-    & > li:nth-child(2) {
-      display: flex;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
+//     & > li:nth-child(2) {
+//       display: flex;
+//       grid-column-start: 3;
+//       grid-column-end: 4;
+//       grid-row-start: 3;
+//       grid-row-end: 4;
+//     }
 
-    & > li:nth-child(3) {
-      display: flex;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 4;
-      grid-row-end: 5;
-    }
+//     & > li:nth-child(3) {
+//       display: flex;
+//       grid-column-start: 1;
+//       grid-column-end: 2;
+//       grid-row-start: 4;
+//       grid-row-end: 5;
+//     }
 
-    & > li:nth-child(4) {
-      display: flex;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 4;
-      grid-row-end: 5;
-    }
+//     & > li:nth-child(4) {
+//       display: flex;
+//       grid-column-start: 2;
+//       grid-column-end: 3;
+//       grid-row-start: 4;
+//       grid-row-end: 5;
+//     }
 
-    & > li:last-child {
-      display: flex;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 4;
-      grid-row-end: 5;
-    }
-  }
+//     & > li:last-child {
+//       display: flex;
+//       grid-column-start: 3;
+//       grid-column-end: 4;
+//       grid-row-start: 4;
+//       grid-row-end: 5;
+//     }
+//   }
 
-  .features__image--first {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
+//   .features__image--first {
+//     grid-column-start: 2;
+//     grid-column-end: 4;
+//     grid-row-start: 1;
+//     grid-row-end: 2;
+//   }
 
-  .features__image--second {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-}
+//   .features__image--second {
+//     grid-column-start: 1;
+//     grid-column-end: 3;
+//     grid-row-start: 3;
+//     grid-row-end: 4;
+//   }
+// }

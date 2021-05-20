@@ -28,19 +28,27 @@
   &::before {
     position: absolute;
     content: url("../img/icons/intro_arrow.svg");
-    bottom: -66px;
+    bottom: -47px;
     left: -229px;
     width: 768px;
     height: 37px;
     z-index: 100;
 
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+    // @media (min-width: @tablet-width) {
+    //   display: none;
+    // }
   }
 
   .text {
     text-align: center;
+  }
+}
+
+.page__body--inner {
+  .content__main-header {
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -58,14 +66,14 @@
   line-height: 26px;
 }
 
-@media (min-width: @tablet-width) {
-  .content__main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+// @media (min-width: @tablet-width) {
+//   .content__main-header {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-    .tagline {
-      width: 520px;
-    }
-  }
-}
+//     .tagline {
+//       width: 520px;
+//     }
+//   }
+// }
