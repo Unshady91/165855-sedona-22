@@ -10,6 +10,10 @@
     width: 320px;
     height: 1px;
     background-color: @basic-milk-fog;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &::after {
@@ -21,6 +25,10 @@
     width: 320px;
     height: 1px;
     background-color: @basic-milk-fog;
+    
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &:last-child::before {
@@ -28,10 +36,14 @@
     display: block;
     content: "";
     bottom: 0;
-    right: -25px;
+    right: -20px;
     width: 320px;
     height: 1px;
     background-color: @basic-milk-fog;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 

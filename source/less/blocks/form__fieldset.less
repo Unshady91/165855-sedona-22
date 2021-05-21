@@ -1,4 +1,4 @@
-.content__form fieldset {
+.content__form {
   border: 0;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 
 .form__fieldset--wrapper {
   padding: 0;
-  margin: 0;;
+  margin: 0;
   // @media (min-width: @tablet-width) {
   //   box-sizing: border-box;
   //   width: 768px;
@@ -21,8 +21,12 @@
 }
 
 .form__fieldset {
+  background-color: @basic-white;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  border: 0;
 }
 
 .fieldset__intro--rows {

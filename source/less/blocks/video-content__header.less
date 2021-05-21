@@ -1,5 +1,16 @@
-.video-content__header--wrapperv {
-  .container();
+
+.main__video-content {
+  .header {
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.video-content__header--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 
   // @media (min-width: @tablet-width) {
   //   box-sizing: border-box;
@@ -10,6 +21,8 @@
 }
 
 .video-content__header {
+  background-color: @basic-white;
+
   .header__title {
     text-align: center;
   }

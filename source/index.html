@@ -44,7 +44,7 @@
     <section class="main__content">
       <header class="main-header content__main-header">
         <div class="content__main-header--wrapper">
-          <p class="tagline main-header__tagline">
+          <p class="lead-paragraph main-header__lead-paragraph">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </p>
           <p class="text main-header__text">
@@ -63,8 +63,12 @@
                   Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img class="image features__image features__image--first" src="img/features_No_1.jpg" width="520"
-                height="260" alt="Зеленый таунхаус в Седоне">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/features_1_desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/features_1_tablet@1x.jpg">
+                <img class="image features__image features__image--first" src="img/features_1.jpg" alt="Зеленый таунхаус в Седоне">
+              </picture>
+
             </div>
             <ul class="sub-list features__sub-list">
               <li class="item sub-list__item">
@@ -102,8 +106,8 @@
                 Да, по нему можно пройти! Если Вы осмелитесь, конечно
               </p>
             </div>
-            <img class="image features__image features__image--second" src="img/features_No_2.jpg" width="520"
-              height="260" alt="Мост дьявола на фоне каньона">
+            <img class="image features__image features__image--second" src="img/features_2.jpg" width="520" height="260"
+              alt="Мост дьявола на фоне каньона">
           </li>
           <li class="item features__item features__item--row">
             <div class="features__item--wrapper">
