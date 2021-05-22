@@ -1,6 +1,10 @@
 .gallery__item {
   position: relative;
 
+  &:first-child {
+    grid-area: main;
+  }
+
   &:first-child::before {
     position: absolute;
     display: block;
@@ -25,7 +29,7 @@
     width: 320px;
     height: 1px;
     background-color: @basic-milk-fog;
-    
+
     @media (min-width: @tablet-width) {
       display: none;
     }

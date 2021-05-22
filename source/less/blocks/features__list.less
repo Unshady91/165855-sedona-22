@@ -14,7 +14,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-
   }
 }
 
@@ -97,12 +96,6 @@
     flex-direction: row;
   }
 
-  .features__item--switch {
-    .features__item--wrapper {
-      order: 2;
-    }
-  }
-
   .features__item--row {
     display: flex;
     flex-direction: column;
@@ -123,7 +116,6 @@
     @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: auto;
     }
   }
 }
@@ -166,18 +158,4 @@
       grid-row-end: 5;
     }
   }
-
-  // .features__image--first {
-  //   grid-column-start: 2;
-  //   grid-column-end: 4;
-  //   grid-row-start: 1;
-  //   grid-row-end: 2;
-  // }
-
-  // .features__image--second {
-  //   grid-column-start: 1;
-  //   grid-column-end: 3;
-  //   grid-row-start: 3;
-  //   grid-row-end: 4;
-  // }
 }

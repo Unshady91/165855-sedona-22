@@ -2,9 +2,21 @@
   display: flex;
   margin-top: 30px;
 
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+
   .input {
     width: 100%;
     padding: 10px;
+
+    @media (min-width: @tablet-width) {
+      width: 50%;
+    }
   }
 }
 
@@ -21,7 +33,10 @@
 }
 
 .submit__text {
-  @media (min-width: @mobile-width-only) {
+  display: inline-block;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
     display: none;
   }
 }

@@ -1,12 +1,19 @@
 .fieldset__radio-buttons--wrapper {
   .container();
 
-  // @media (min-width: @tablet-width) {
-  //   box-sizing: border-box;
-  //   width: 768px;
-  //   padding: 0 60px;
-  //   margin: 0 auto;
-  // }
+  @media (min-width: @tablet-width) {
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 1;
+    box-sizing: border-box;
+  }
 }
 
 .radio-buttons__list {
