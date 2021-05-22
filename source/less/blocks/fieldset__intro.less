@@ -2,12 +2,9 @@
   .container();
 
   @media (min-width: @tablet-width) {
-    width: 386px;
+    width: 100%;
     padding: 0;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    margin: 0;
     order: 2;
   }
 }
@@ -43,10 +40,6 @@
   border: 0;
 }
 
-.fieldset .title {
-  text-align: center;
-}
-
 @media (min-width: @tablet-width) {
   .fieldset__content-block--wrapper {
     display: flex;
@@ -56,16 +49,22 @@
   }
 }
 
-.fieldset__intro label {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
+.fieldset__intro {
+  .title {
+    text-align: center;
+  }
 
-.fieldset__intro span {
-  padding: 13px 10px 13px 0;
-  align-self: center;
+  label {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  span {
+    padding: 13px 10px 13px 0;
+    align-self: center;
+  }
 }
 
 .fieldset__input--size {

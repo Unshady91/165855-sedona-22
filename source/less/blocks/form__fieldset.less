@@ -6,14 +6,8 @@
   border: 0;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
-    display: grid;
-    grid-template-columns: repeat(2, 386px);
-    grid-template-rows: auto;
-    // grid-template-areas: "radio intro"
-    //                       "contact ."
-    //                       "checkbox ."
-    //                       "textarea .";
+    display: contents;
+    border: 0;
   }
 }
 
@@ -26,12 +20,19 @@
 .form__fieldset--wrapper {
 
   @media (min-width: @tablet-width) {
+  background-color: @basic-white;
   width: 768px;
   padding: 0 60px;
   padding: 0;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "radio intro"
+    "contact contact"
+    "checkbox checkbox"
+    "textarea textarea";
   }
 }
 
@@ -40,6 +41,7 @@
   border-bottom: 1px solid @basic-milk-fog;
 
   @media (min-width: @tablet-width) {
+    display: contents;
     width: 0;
     margin: -1;
     padding: 0;
@@ -51,6 +53,7 @@
   border-bottom: 1px solid @basic-milk-fog;
 
   @media (min-width: @tablet-width) {
+    display: contents;
     width: 0;
     margin: -1;
     padding: 0;
@@ -59,11 +62,11 @@
 }
 
 .fieldset__contact-info--rows,
-
 .fieldset__checkbox-list--rows {
   border-bottom: 1px solid @basic-milk-fog;
 
   @media (min-width: @tablet-width) {
+    display: contents;
     border: 0;
   }
 }

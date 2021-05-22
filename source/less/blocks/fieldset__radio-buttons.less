@@ -2,15 +2,10 @@
   .container();
 
   @media (min-width: @tablet-width) {
-    width: 386px;
-    display: flex;
-    flex-direction: column;
+    grid-area: radio;
+    width: 100%;
     padding: 0 60px;
     margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
     order: 1;
     box-sizing: border-box;
   }
@@ -44,10 +39,10 @@
   .visually-hidden();
 
   & + .radio-buttons__span {
-    width: 48px;
-    height: 48px;
     border-radius: 50%;
     background-color: @basic-milk-sand;
+    width: 48px;
+    height: 48px;
     box-sizing: border-box;
   }
 }

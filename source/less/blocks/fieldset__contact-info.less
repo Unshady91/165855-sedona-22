@@ -2,16 +2,15 @@
   .container();
 
   @media (min-width: @tablet-width) {
-    width            : 100%;
-    display          : flex;
-    flex-direction   : column;
-    padding          : 0;
-    margin           : 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    order: 3;
     grid-column-start: 1;
-    grid-column-end  : 3;
-    grid-row-start   : 2;
-    grid-row-end     : 3;
-    grid-area        : contact;
+    grid-column-end: 3;
+    grid-area: contact;
   }
 }
 
@@ -21,27 +20,26 @@
   }
 }
 
-
 .contact-info__input {
 
   .fieldset__input();
 }
 
 .contact-info__input--size {
-  width  : 100%;
+  width: 100%;
   padding: 16px 0 16px 12px;
 }
 
 .contact-info__input-span--wrapper {
-  display      : flex;
+  display: flex;
   margin-bottom: 20px;
-  margin-top   : 20px;
+  margin-top: 20px;
 }
 
 .contact-info__icon-block {
-  width              : 20%;
-  background-color   : @basic-milk-sand;
-  background-repeat  : no-repeat;
+  width: 20%;
+  background-color: @basic-milk-sand;
+  background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: @tablet-width) {

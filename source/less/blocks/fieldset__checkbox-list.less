@@ -3,11 +3,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    order: 4;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-area: intro;
+    grid-area: checkbox;
   }
 }
 
@@ -15,6 +14,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 
   .clear-list();
 
@@ -33,6 +38,11 @@
   .checkbox-span {
     margin-right: 10px;
   }
+}
+
+.checkbox-list__label {
+  font-weight: bold;
+  text-transform: initial;
 }
 
 .checkbox-list__input {
