@@ -40,16 +40,33 @@
 
   & + .radio-buttons__span {
     border-radius: 50%;
-    background-color: @basic-milk-sand;
+    background-color: @basic-milk-light;
     width: 48px;
     height: 48px;
     box-sizing: border-box;
   }
+
+  &:hover + .radio-buttons__span {
+      background-color: @basic-milk-fog;
+    }
 }
 
 .radio-buttons__input:checked {
   & + .radio-buttons__span--radio-on {
     background-color: @basic-black-light;
-    border: 12px solid @basic-milk-sand;
+    border: 12px solid @basic-milk-light;
+  }
+}
+
+.radio-buttons__input:disabled {
+  & + .radio-buttons__span--radio-on {
+    background-color: @basic-silver;
+    border: 12px solid @basic-black-light;
+  }
+}
+
+.radio-buttons__span {
+  &:hover {
+    background-color: @basic-milk-fog;
   }
 }

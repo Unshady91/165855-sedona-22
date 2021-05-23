@@ -36,7 +36,7 @@
         </li>
       </ul>
     </nav>
-    <a class="link page-header__link" href="#">
+    <a class="link page-header__link" href="index.html">
       <img class="page-header__logo" src="img/icons/logo.svg" width="102" height="59" alt="Логотип Седона">
     </a>
     <div class="page-header__image--wrapper">
@@ -154,7 +154,7 @@
                       <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox1"
                         type="checkbox" checked>
                       <span
-                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check checkbox-list__checkbox-span--disabled"></span>
                     </li>
                     <li class="item checkbox-list__item">
                       <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox2">
@@ -163,7 +163,7 @@
                       <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox2"
                         type="checkbox" checked>
                       <span
-                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check checkbox-list__checkbox-span--disabled"></span>
                     </li>
                     <li class="item checkbox-list__item">
                       <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox3">
@@ -172,7 +172,7 @@
                       <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox3"
                         type="checkbox" checked>
                       <span
-                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check checkbox-list__checkbox-span--disabled"></span>
                     </li>
                     <li class="item checkbox-list__item">
                       <label class="label checkbox-list__label checkbox-list__label--text-size" for="checkbox4">
@@ -181,7 +181,7 @@
                       <input class="input checkbox-list__input checkbox-list__input--checkbox" id="checkbox4"
                         type="checkbox">
                       <span
-                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check"></span>
+                        class="checkbox-span checkbox-list__checkbox-span checkbox-list__checkbox-span--check checkbox-list__checkbox-span--disabled"></span>
                     </li>
                   </ul>
                 </div>
@@ -247,6 +247,35 @@
       </div>
     </div>
   </footer>
+  <section class="message-box body__message-box">
+    <h2 class="visually-hidden">Сообщения</h2>
+    <div class="failure-window message-box__failure-window">
+      <div class="message-box__failure-window--wrapper">
+        <p class="lead-paragraph failure-window__lead-paragraph">
+          Что-то пошло не так!
+        </p>
+        <p class="text failure-window__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="button failure-window__button">Ок</button>
+      </div>
+    </div>
+    <div class="message-box__succeed-window">
+      <div class="message-box__succeed-window--wrapper">
+        <p class="lead-paragraph succeed-window__lead-paragraph">
+          Ваш отзыв отправлен!
+        </p>
+        <p class="text succeed-window__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам.</br>В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="succeed-window__button--wrapper">
+        <button class="button succeed-window__button">Закрыть окно</button>
+      </div>
+    </div>
+
+    </div>
+  </section>
 </body>
 
 </html>

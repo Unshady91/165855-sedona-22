@@ -16,18 +16,18 @@
   padding: 0 20px;
   position: relative;
 
-    @media (min-width: @tablet-width) {
-      padding: 0 60px;
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
   }
 
-    &::before {
-    content: url("../img/icons/intro_arrow.svg");
-    position: absolute;
-    bottom: -35px;
-    left: 0px;
-    width: 320px;
-    height: 37px;
-    z-index: 100;
+  &::before {
+  content: url("../img/icons/intro_arrow.svg");
+  position: absolute;
+  bottom: -35px;
+  left: 0px;
+  width: 320px;
+  height: 37px;
+  z-index: 100;
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -40,21 +40,23 @@
   }
 
   .text {
-    margin-bottom: 30px;
     text-align: center;
+    margin-top: 9px;
   }
 }
 
 .main__content {
   .main-header {
-      width: 320px;
-      padding: 0;
-      margin: 0 auto;
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
 
       @media (min-width: @tablet-width) {
         width: 768px;
-        padding: 0;
-        margin: 0 auto;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 1200px;
       }
   }
 }
@@ -66,11 +68,10 @@
 .main-header__lead-paragraph {
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: @baseLineHeight + 1;
 }
 
 .main-header__text {
   font-size: 14px;
-  line-height: 26px;
-
+  line-height: @baseLineHeight;
 }

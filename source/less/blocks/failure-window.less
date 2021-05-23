@@ -1,0 +1,77 @@
+.message-box__failure-window {
+  display: none;
+  background-color: @basic-white;
+  bottom: 20%;
+  left: 0;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    left: 0;
+
+  }
+}
+
+.body__message-box {
+  .failure-window {
+    width: 320px;
+    padding: 0;
+    margin: 0 auto;
+    position: fixed;
+  }
+}
+
+.message-box__failure-window--wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 7px 15px 0 @rgba-black-soft;
+
+  @media (min-width: @tablet-width) {
+    // grid-area: radio;
+    // width: 100%;
+    // padding: 0 60px;
+    // margin: 0;
+    // order: 1;
+    // box-sizing: border-box;
+  }
+
+  .button {
+    width: 190px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+
+  .lead-paragraph {
+    margin-top: 20px;
+  }
+
+  .text {
+    margin-bottom: 20px;
+  }
+}
+
+.failure-window__lead-paragraph {
+  font-weight: bold;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+}
+
+.failure-window__text {
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+}
+
+.failure-window__button {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  font-style: normal;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @basic-white;
+  background-color: @basic-blue-smooth;
+  border: 0;
+  outline: none;
+}

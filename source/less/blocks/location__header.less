@@ -7,6 +7,10 @@
     @media (min-width: @tablet-width) {
       width: 768px;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
   }
 }
 
@@ -29,7 +33,21 @@
 
   .link {
     margin-bottom: 30px;
+
+    &:hover {
+      background-color: @basic-blue-light-marine;
+    }
+
+    &:active {
+      background-color: @basic-blue-marine;
+      color: fade(@basic-white, 30%);
+    }
   }
+}
+
+.location__link--disabled {
+  background-color: @basic-blue-marine;
+  color: fade(@basic-milk-fog, 30%);
 }
 
 .location__header {
