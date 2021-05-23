@@ -1,12 +1,10 @@
 .map__wrapper {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
   display: flex;
   flex: 0 1 auto;
-  overflow: hidden;
+  width: 320px;
   height: 350px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -18,24 +16,21 @@
     width: 1200px;
     padding: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    box-sizing: border-box;
+    background-color: @basic-blue-smooth;
+    border-radius: 50%;
+    margin-top: 50%;
+    margin-left: 45%;
+    border: 5px solid @basic-white;
+  }
 }
-//   .map {
-//     width: 320px;
-//     height: 350px;
-//
-//     @media (min-width: @tablet-width) {
-//     width: 100%;
-//     }
-//   }
-
-// .map__image {
-//   background-color: @basic-blue-ocean;
-//   object-fit: cover;
-//   display: block;
-// }
-
 .map__iframe {
-    // position: absolute;
     top:0;
     left: 0;
     width: 100%;

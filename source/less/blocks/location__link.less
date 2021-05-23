@@ -8,9 +8,23 @@
   .marine-style();
 }
 // Ссылка. Геометрия
-.location__header .link {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
+.location__header {
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 17px 0;
+    margin-top: 28px;
+    margin-bottom: 50px;
+    z-index: 100;
+
+    &:hover {
+      background-color: @basic-blue-light-marine;
+    }
+
+    &:active {
+      background-color: @basic-blue-marine;
+      color: fade(@basic-white, 30%);
+    }
+  }
 }

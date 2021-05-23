@@ -15,33 +15,31 @@
 }
 
 .location__header--wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 60px;
   }
 
-  .lead-paragraph,
+  .lead-paragraph {
+    text-align: center;
+    margin-top: 33px;
+  }
+
+
   .text {
     text-align: center;
-    margin-top: 50px;
+    padding: 0;
+    margin: 0;
   }
 
-  .text {
-    padding: 0 15px 0 15px;
-  }
-
-  .link {
-    margin-bottom: 30px;
-
-    &:hover {
-      background-color: @basic-blue-light-marine;
-    }
-
-    &:active {
-      background-color: @basic-blue-marine;
-      color: fade(@basic-white, 30%);
-    }
+  .span-text {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
   }
 }
 

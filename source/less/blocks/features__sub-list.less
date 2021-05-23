@@ -1,36 +1,26 @@
-// @media (min-width: @tablet-width) {
-//   .sub-list {
-//     display: flex;
-//     flex-direction: row;
-//     }
-// }
-
 .features__sub-list {
   display: flex;
   flex-direction: column;
 }
 
-
-.sub-list__item:first-child {
-  .sub-list__pseudo-icon {
+.sub-list__pseudo-icon {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
     background-size: auto;
     width: 39px;
     height: 36px;
-    top: 23px;
-    left: -45px;
     z-index: 100;
   }
 
+.sub-list__item:first-child {
   .sub-list__wrapper {
-  padding-top: 40px;
     position: relative;
 
     &::before {
       background-image: url("../img/icons/features_home.svg");
-
+      top: 25px;
+      left: -47px;
       .sub-list__pseudo-icon();
     }
   }
@@ -42,7 +32,8 @@
 
     &::before {
       background-image: url("../img/icons/features_present.svg");
-      z-index: 100;
+      top: 15px;
+      left: -42px;
 
       .sub-list__pseudo-icon();
     }
@@ -55,16 +46,17 @@
 
     &::before {
       background-image: url("../img/icons/features_burger.svg");
+      top: 22px;
+      left: -49px;
 
-      .sub-list-pseudo-icon();
+      .sub-list__pseudo-icon();
     }
   }
 }
 
 .sub-list__wrapper {
   width: 70%;
-  margin-left: 64px;
-  padding: 10% 0;
+  margin-left: 68px;
 }
 
 .sub-list {
@@ -85,17 +77,48 @@
 
   .sub-list__lead-paragraph,
   .text {
+    display: block;
     position: relative;
     text-align: left;
     margin: 0;
-    padding: 0;
+  }
+
+  .lead-paragraph {
+    padding: 37px 0 0 0;
+    margin-left: 2px;
+  }
+
+  .text {
+    padding: 18px 0 0 0;
+    margin: 0;
+  }
+
+  .sub-list__lead-paragraph--align-second {
+    padding: 29px 0 0 0;
+    margin-left: 2px;
+  }
+
+  .sub-list__text--align-second {
+    padding: 16px 0 0 0;
+    margin-left: 2px;
+  }
+
+  .sub-list__lead-paragraph--align-third {
+    padding: 29px 0 0 0;
+    margin-left: 2px;
+  }
+
+  .sub-list__text--align-third {
+    padding: 17px 0 0 0;
+    margin-left: 2px;
+    margin-bottom: 36px;
   }
 }
 
 .sub-list__lead-paragraph {
   font-weight: bold;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 22px;
 }
 
 .sub-list__text {
