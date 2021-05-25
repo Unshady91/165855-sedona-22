@@ -1,4 +1,4 @@
-.content__link {
+.content__link-hashtag {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -7,8 +7,12 @@
   .link-decoration();
 }
 
-.footer__content--wrapper {
-  & > a {
+.footer__content {
+  .link-hashtag {
     margin-top: 36px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
   }
 }

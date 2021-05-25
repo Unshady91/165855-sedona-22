@@ -26,6 +26,10 @@
   .lead-paragraph {
     text-align: center;
     margin-top: 33px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 55px;
+    }
   }
 
 
@@ -33,6 +37,11 @@
     text-align: center;
     padding: 0;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      padding-top: 5px;
+    }
   }
 
   .span-text {
@@ -43,11 +52,6 @@
   }
 }
 
-.location__link--disabled {
-  background-color: @basic-blue-marine;
-  color: fade(@basic-milk-fog, 30%);
-}
-
 .location__header {
   background-color: @basic-white;
   display: flex;
@@ -56,8 +60,12 @@
 
 .location__lead-paragraph {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: @baseFontSize + 3;
+  line-height: @baseLineHeight;
+
+  @media (min-width: @tablet-width) {
+    font-size: @baseFontSize + 12;
+  }
 }
 
 .location__text {

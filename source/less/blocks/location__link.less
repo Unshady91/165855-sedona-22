@@ -18,6 +18,12 @@
     margin-bottom: 50px;
     z-index: 100;
 
+    @media (min-width: @tablet-width) {
+      width: 458px;
+      padding: 15px 0 17px 0;
+      margin: 38px auto 58px;
+    }
+
     &:hover {
       background-color: @basic-blue-light-marine;
     }
@@ -27,4 +33,9 @@
       color: fade(@basic-white, 30%);
     }
   }
+}
+
+.location__link--disabled {
+  background-color: @basic-blue-marine;
+  color: fade(@basic-milk-fog, 30%);
 }
