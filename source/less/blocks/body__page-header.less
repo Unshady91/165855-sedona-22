@@ -62,7 +62,11 @@
   justify-content: center;
   margin-top: -56px;
 
-  img {
-    z-index: 3;
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
   }
+}
+
+.page-header__logo {
+  z-index: 3;
 }
